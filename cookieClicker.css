@@ -88,6 +88,7 @@
     width: 5rem;
     height: 5rem;
     margin: auto;
+    margin-bottom: 1rem;
     transition-duration: 100ms;
     transform: scale(1, 1);
 }
@@ -95,6 +96,12 @@
 .cookie:hover{
     transition-duration: 100ms;
     transform: scale(2, 2);
+}
+
+.cookieNumber{
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 /* Main page: units */
