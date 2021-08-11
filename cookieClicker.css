@@ -1,0 +1,86 @@
+/* Header */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    width: 80rem;
+    height: 4rem;
+    margin: auto;
+    padding: 0;
+}
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    height: auto;
+}
+
+.navBtn{
+    text-align: center;
+    width: 10rem;
+    height: auto;
+    background-color: rgb(33, 158, 33);
+    color: white;
+    border-radius: 10px;
+    line-height: 4rem;
+
+}
+
+.saveBtn{
+    text-align: center;
+    width: 10rem;
+    height: auto;
+    background-color: rgb(33, 154, 158);
+    color: white;
+    border-radius: 10px;
+    line-height: 4rem;
+}
+
+.navTitle{
+    text-align: center;
+    width: 20rem;
+    height: auto;
+
+}
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    margin: auto;
+}
+
+.footerText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+/* Main page */
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100rem;
+    height: 40rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.cookieContainer{
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 70rem;
+}
+
+.unitContainer{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 30rem;
+}
+
+
+html{
+    background-color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
