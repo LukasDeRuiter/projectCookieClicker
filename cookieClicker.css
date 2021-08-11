@@ -98,6 +98,11 @@
     transform: scale(2, 2);
 }
 
+.cookie:active{
+    transition-duration: 50ms;
+    transform: skewX(25deg);
+}
+
 .cookieNumber{
     font-size: 3rem;
     margin: auto;
