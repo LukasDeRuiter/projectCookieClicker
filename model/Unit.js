@@ -14,13 +14,17 @@ class Unit {
         return this.name;
     }
 
+    getCookies() {
+        return this.cookies;
+    }
+
     setCookies(cookies) {
         this.cookies = cookies * multiplyer;
     }
 
     //Methods
     createCookies() {
-        return this.cookies * this.amount;
+        return this.getCookies() * this.amount;
     }
 
     buyUnit(){
