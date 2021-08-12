@@ -26,10 +26,6 @@
                 <div class="unitAmount"></div>
                 <div class="unitCost"></div>
             </div>
-            <div class="singleUnitCard"></div>
-            <div class="singleUnitCard"></div>
-            <div class="singleUnitCard"></div>
-            <div class="singleUnitCard"></div>
 
         </div>
     </div>

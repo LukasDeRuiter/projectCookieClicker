@@ -154,6 +154,10 @@
 }
 
 .unitBtnContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: brown;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -162,7 +166,10 @@
 }
 
 .unitBtn{
-    
+    margin: auto;
+    border: 3px solid black;
+    width: 4.2rem;
+    height: 2.8rem;
 }
 
 .unitCost{
