@@ -28,7 +28,7 @@ class Unit {
 
     //Methods
     createCookies() {
-        return this.getCookies() * this.amount;
+        return this.cookies * this.amount;
     }
 
     buyUnit(amountBought){

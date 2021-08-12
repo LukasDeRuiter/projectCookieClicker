@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footerText">Copyright 2021 Lukas de Ruiter</div>
-    <div class="footerText" id="test"><?php echo "<script>raccoon.getAmount()</script>"?></div>
+    <div class="footerText" id="test"></div>
 </footer>
 
 </body>
