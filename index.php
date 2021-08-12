@@ -11,23 +11,23 @@
         </div>
         
         <div class="unitContainer">
-
+            <?php $containerStrings = array("unitName", "unitPortrait", "unitCookies", "unitAmount", "unitCost")?>
             <?php for($i = 0; $i < 5; $i++) { ?>
 
             <div class="singleUnitCard">
-                <div class="unitName"></div>
-                <div class="unitPortrait"></div>
+                <div class="unitName"  id="<?php echo $containerStrings[0] . $i ?>"></div>
+                <div class="unitPortrait"  id="<?php echo $containerStrings[1] . $i ?>"></div>
 
                 <div class="unitBtnContainer">
-                    <div class="unitBtn"></div>
-                    <div class="unitBtn"></div>
-                    <div class="unitBtn"></div>
-                    <div class="unitBtn"></div>
+                    <div class="unitBtn" id="<?php echo $i ?>">1</div>
+                    <div class="unitBtn" id="<?php echo $i ?>">2</div>
+                    <div class="unitBtn" id="<?php echo $i ?>">5</div>
+                    <div class="unitBtn" id="<?php echo $i ?>">10</div>
                 </div>
 
-                <div class="unitCookies"></div>
-                <div class="unitAmount"></div>
-                <div class="unitCost"></div>
+                <div class="unitCookies" id="<?php echo $containerStrings[2] . $i ?>"></div>
+                <div class="unitAmount" id="<?php echo $containerStrings[3] . $i ?>"></div>
+                <div class="unitCost" id="<?php echo $containerStrings[4] . $i ?>"></div>
             </div>
 
             <?php } ?>

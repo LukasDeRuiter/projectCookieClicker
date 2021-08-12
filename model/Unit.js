@@ -18,6 +18,10 @@ class Unit {
         return this.cookies;
     }
 
+    getAmount() {
+        return this.amount;
+    }
+
     setCookies(cookies) {
         this.cookies = cookies * multiplyer;
     }
@@ -27,8 +31,8 @@ class Unit {
         return this.getCookies() * this.amount;
     }
 
-    buyUnit(){
-        this.amount += 1;
+    buyUnit(amountBought){
+        this.amount += amountBought;
     }
 
 }
