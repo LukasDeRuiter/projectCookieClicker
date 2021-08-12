@@ -11,7 +11,21 @@
         </div>
         
         <div class="unitContainer">
-            <div class="singleUnitCard"></div>
+            <div class="singleUnitCard">
+                <div class="unitName"></div>
+                <div class="unitPortrait"></div>
+
+                <div class="unitBtnContainer">
+                    <div class="unitBtn"></div>
+                    <div class="unitBtn"></div>
+                    <div class="unitBtn"></div>
+                    <div class="unitBtn"></div>
+                </div>
+
+                <div class="unitCookies"></div>
+                <div class="unitAmount"></div>
+                <div class="unitCost"></div>
+            </div>
             <div class="singleUnitCard"></div>
             <div class="singleUnitCard"></div>
             <div class="singleUnitCard"></div>

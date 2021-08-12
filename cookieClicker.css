@@ -112,13 +112,69 @@
 /* Main page: units */
 
 .singleUnitCard{
-    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
     width: auto;
     height: 10rem;
 }
 
-html{
+.unitPortrait{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.unitName{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+}
+
+.unitCookies{
+    background-color: orange;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.unitAmount{
+    background-color: pink;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.unitBtnContainer{
     background-color: brown;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.unitBtn{
+    
+}
+
+.unitCost{
+    background-color: purple;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+html{
+    background-color: gray;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
