@@ -1,11 +1,12 @@
 class Unit {
 
     //Constructor
-    constructor(name, cookies, cost, amount) {
+    constructor(name, cookies, cost, amount, intervalTime) {
         this.name = name;
         this.cookies = cookies;
         this.cost = cost;
         this.amount = amount;
+        this.intervalTime = intervalTime;
         this.multiplyer = 1;
     }
 
@@ -24,6 +25,10 @@ class Unit {
 
     getAmount() {
         return this.amount;
+    }
+
+    getIntervalTime() {
+        return this.intervalTime;
     }
 
     setCookies(cookies) {

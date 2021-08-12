@@ -8,11 +8,8 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     counter.updateCounter();
 })
 
-let raccoon = new Unit("Raccoon", 10, 50, 0);
-let groundHog = new Unit("Groundhog", 16, 100, 0);
-
-units[0] = raccoon;
-units[1] = groundHog;
+units[0] = new Unit("Raccoon", 10, 50, 0, 9000);
+units[1] = new Unit("Groundhog", 16, 100, 0 , 16000);
 
 
 for(let i = 0; i < units.length; i++) {
@@ -20,16 +17,16 @@ for(let i = 0; i < units.length; i++) {
 }
 
 function addUnitCookiesRaccoon (){
-            counter.addAmount(raccoon.createCookies());
+            counter.addAmount(units[0].createCookies());
             counter.updateCounter();
         };
-setInterval(addUnitCookiesRaccoon, 9000);
+setInterval(addUnitCookiesRaccoon, units[0].getIntervalTime());
 
 function addUnitCookiesGroundhog (){
-    counter.addAmount(raccoon.createCookies());
+    counter.addAmount(units[1].createCookies());
     counter.updateCounter();
 };
-setInterval(addUnitCookiesGroundhog, 16000);
+setInterval(addUnitCookiesGroundhog, units[1].getIntervalTime());
 
 
 let buttons = document.getElementsByClassName("unitBtn");
