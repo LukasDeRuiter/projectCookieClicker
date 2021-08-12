@@ -18,6 +18,10 @@ class Unit {
         return this.cookies;
     }
 
+    getCost() {
+        return this.cost;
+    }
+
     getAmount() {
         return this.amount;
     }
