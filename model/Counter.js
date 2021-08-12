@@ -14,8 +14,13 @@ class Counter {
         this.cookies = cookies;
     }
 
+    //Methods
     addAmount(addWith) {
         this.cookies = this.cookies + addWith;
+    }
+
+    updateCounter() {
+        document.getElementById("counter").innerHTML = counter.getCookies();
     }
 
 }
