@@ -11,6 +11,9 @@
         </div>
         
         <div class="unitContainer">
+
+            <?php for($i = 0; $i < 5; $i++) { ?>
+
             <div class="singleUnitCard">
                 <div class="unitName"></div>
                 <div class="unitPortrait"></div>
@@ -26,6 +29,8 @@
                 <div class="unitAmount"></div>
                 <div class="unitCost"></div>
             </div>
+
+            <?php } ?>
 
         </div>
     </div>
