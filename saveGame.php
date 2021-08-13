@@ -12,6 +12,7 @@ $passwordError = "";
 if(isset($_POST['submit'])) {
 
     $saveCookies = $_POST['cookiesSave'];
+    $newSaveID = $lastSaveID + 1;
 
     if(empty($_POST['name'])) {
         $nameError = "A name is required!";
@@ -42,7 +43,7 @@ if(isset($_POST['submit'])) {
         $savePassword = mysqli_real_escape_string($connection, $_POST['password']);
         $saveCookies = mysqli_real_escape_string($connection, $_POST['cookiesSave']);
 
-        $sql = "INSERT INTO user(userName,userPassword,userCookies) VALUES('$saveName', '$savePassword', '$saveCookies')";
+        $sql = "INSERT INTO user(userID, userName,userPassword,userCookies) VALUES('$newSaveID', '$saveName', '$savePassword', '$saveCookies')";
 
         if(mysqli_query($connection, $sql)) {
             mysqli_close($connection);
