@@ -34,14 +34,18 @@ let buttons = document.getElementsByClassName("unitBtn");
 
 Array.from(buttons).forEach(button => button.addEventListener('click', function() {
     let costOfPurchase = button.innerHTML * units[button.id].getCost();
+    let yourAmountOfCookies = counter.getCookies();
     console.log(costOfPurchase);
-    if(costOfPurchase >= counter.getCookies()){
-        units[button.id].buyUnit(parseInt(button.innerHTML));
+    console.log(yourAmountOfCookies);
+    if(yourAmountOfCookies >= costOfPurchase){
         counter.setCookies(counter.getCookies() - costOfPurchase);
+        units[button.id].buyUnit(parseInt(button.innerHTML));
         for(let i = 0; i < parseInt(button.innerHTML); i++) {
             units[button.id].setCost();
-        }
+        } 
         setHtmlelements(button.id);
+    } else {
+        console.log("Not enough cookies!");
     }
 }))
 
