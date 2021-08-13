@@ -1,5 +1,7 @@
 <?php
 
+include('config/db_connect.php');
+
 $saveName = "";
 $savePassword = "";
 
@@ -25,7 +27,7 @@ if(isset($_POST['submit'])) {
         $passwordError = "";
         $savePassword = $_POST['password'];
         if(!filter_var($savePassword , FILTER_VALIDATE_INT)) {
-            $passwordError = "Please enter a password that is made out of numbrs!";
+            $passwordError = "Please enter a password that is made out of numbers!";
             $savePassword = "";
     }
 }
