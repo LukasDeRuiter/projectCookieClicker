@@ -21,6 +21,7 @@ class Counter {
 
     updateCounter() {
         document.getElementById("counter").innerHTML = counter.getCookies();
+        document.getElementById("cookiesSave").value = counter.getCookies();
     }
 
 }

@@ -4,12 +4,15 @@ include('config/db_connect.php');
 
 $saveName = "";
 $savePassword = "";
+$saveCookies = "";
 
 $nameError = "";
 $passwordError = "";
 
 if(isset($_POST['submit'])) {
-    
+
+    $saveCookies = $_POST['cookiesSave'];
+
     if(empty($_POST['name'])) {
         $nameError = "A name is required!";
     } else {
@@ -35,15 +38,14 @@ if(isset($_POST['submit'])) {
     if($nameError == "" && $passwordError == "") {
 
         //change here
-        $number = mysqli_real_escape_string($connection, $_POST['number']);
-        $name = mysqli_real_escape_string($connection, $_POST['name']);
-        $type = mysqli_real_escape_string($connection, $_POST['type']);
+        $saveName = mysqli_real_escape_string($connection, $_POST['name']);
+        $savePassword = mysqli_real_escape_string($connection, $_POST['password']);
+        $saveCookies = mysqli_real_escape_string($connection, $_POST['cookiesSave']);
 
-        $sql = "INSERT INTO pokemon(id,name,type) VALUES('$number', '$name', '$type')";
+        $sql = "INSERT INTO user(userName,userPassword,userCookies) VALUES('$saveName', '$savePassword', '$saveCookies')";
 
         if(mysqli_query($connection, $sql)) {
             mysqli_close($connection);
-            header('Location: index.php');
         } else {
             echo "Error with database connection: " . mysqli_error($connection);
         }
@@ -65,6 +67,8 @@ if(isset($_POST['submit'])) {
     <label class="saveLabel">Please create a password: </label>
     <input type="text" name="password" class="saveInputField" value="<?php echo htmlspecialchars($savePassword) ?>">
     <p class="errormessage"><?php echo $passwordError ?></p>
+
+    <input type="hidden" value="" id="cookiesSave" name="cookiesSave">
 
     <input type="submit" name="submit" value="submit" class="submitBtn">
 
