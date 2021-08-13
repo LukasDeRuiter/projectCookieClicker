@@ -6,6 +6,50 @@ $savePassword = "";
 $nameError = "";
 $passwordError = "";
 
+if(isset($_POST['submit'])) {
+    
+    if(empty($_POST['name'])) {
+        $nameError = "A name is required!";
+    } else {
+        $nameError = "";
+        $saveName = $_POST['name'];
+        if(!preg_match('/^[a-zA-Z\s]+$/', $saveName)) {
+            $nameError = "Please enter a name using only lowercase and uppercase letters!";
+            $saveName = "";
+        }
+    }
+
+    if(empty($_POST['password'])) {
+        $passwordError = "A password is required that is made out of numbers!";
+    } else {
+        $passwordError = "";
+        $savePassword = $_POST['password'];
+        if(!filter_var($savePassword , FILTER_VALIDATE_INT)) {
+            $passwordError = "Please enter a password that is made out of numbrs!";
+            $savePassword = "";
+    }
+}
+
+    if($nameError == "" && $passwordError == "") {
+
+        //change here
+        $number = mysqli_real_escape_string($connection, $_POST['number']);
+        $name = mysqli_real_escape_string($connection, $_POST['name']);
+        $type = mysqli_real_escape_string($connection, $_POST['type']);
+
+        $sql = "INSERT INTO pokemon(id,name,type) VALUES('$number', '$name', '$type')";
+
+        if(mysqli_query($connection, $sql)) {
+            mysqli_close($connection);
+            header('Location: index.php');
+        } else {
+            echo "Error with database connection: " . mysqli_error($connection);
+        }
+    } else{
+        echo "Form is not filled in correctly!";
+    }
+}
+
 
 ?>
 
