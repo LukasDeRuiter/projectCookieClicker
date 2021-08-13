@@ -8,6 +8,7 @@ class Unit {
         this.amount = amount;
         this.intervalTime = intervalTime;
         this.multiplyer = 1;
+        this.costMultiplyer = 1.25;
     }
 
     //Getters and Setters
@@ -33,6 +34,10 @@ class Unit {
 
     setCookies(cookies) {
         this.cookies = cookies * multiplyer;
+    }
+
+    setCost() {
+        this.cost *= this.costMultiplyer;
     }
 
     //Methods

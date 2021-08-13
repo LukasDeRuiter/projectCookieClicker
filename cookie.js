@@ -33,19 +33,27 @@ setInterval(addUnitCookiesGroundhog, units[1].getIntervalTime());
 let buttons = document.getElementsByClassName("unitBtn");
 
 Array.from(buttons).forEach(button => button.addEventListener('click', function() {
-    units[button.id].buyUnit(parseInt(button.innerHTML));
-    setHtmlelements(button.id);
+    let costOfPurchase = button.innerHTML * units[button.id].getCost();
+    console.log(costOfPurchase);
+    if(costOfPurchase >= counter.getCookies()){
+        units[button.id].buyUnit(parseInt(button.innerHTML));
+        counter.setCookies(counter.getCookies() - costOfPurchase);
+        for(let i = 0; i < parseInt(button.innerHTML); i++) {
+            units[button.id].setCost();
+        }
+        setHtmlelements(button.id);
+    }
 }))
 
 function sethtmlElementsAtStart(unitValue){
     document.getElementById(`unitName${unitValue}`).innerHTML = units[unitValue].getName();
-    document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
     setHtmlelements(unitValue);
 }
 
 function setHtmlelements(unitValue) {
     document.getElementById(`unitCookies${unitValue}`).innerHTML = units[unitValue].getCookies();
     document.getElementById(`unitAmount${unitValue}`).innerHTML = units[unitValue].getAmount();
+    document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
 }
 
 
