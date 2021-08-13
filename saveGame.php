@@ -43,9 +43,24 @@ if(isset($_POST['submit'])) {
         $savePassword = mysqli_real_escape_string($connection, $_POST['password']);
         $saveCookies = mysqli_real_escape_string($connection, $_POST['cookiesSave']);
 
-        $sql = "INSERT INTO user(userID, userName,userPassword,userCookies) VALUES('$newSaveID', '$saveName', '$savePassword', '$saveCookies')";
+        $sql = "INSERT INTO user(userID,userName,userPassword,userCookies) VALUES('$newSaveID', '$saveName', '$savePassword', '$saveCookies')";
 
         if(mysqli_query($connection, $sql)) {
+
+            for($i = 0; $i < 3; $i++) {
+            $saveUnitName = $_POST['unitNumber' . $i . '0'];
+            $saveUnitCookies = $_POST['unitNumber' . $i . '1'];
+            $saveUnitCost = $_POST['unitNumber' . $i . '2'];
+            $saveUnitAmount  = $_POST['unitNumber' . $i . '3'];
+            $saveUnitIntervalTime = $_POST['unitNumber' . $i . '4'];
+            $saveUnitMultiplyer = $_POST['unitNumber' . $i . '5'];
+            $saveUnitCostMultiplyer = $_POST['unitNumber' . $i . '6'];
+            $sql2 = "INSERT INTO unit(unitName,unitCookies,unitCost,unitAmount,intervalTime,unitMultiplyer,unitCostMultiplyer,userID) VALUES('$saveUnitName', '$saveUnitCookies', '$saveUnitCost',
+         '$saveUnitAmount', '$saveUnitIntervalTime', '$saveUnitMultiplyer' , '$saveUnitCostMultiplyer', '$newSaveID')";
+         mysqli_query($connection, $sql2);
+            }
+
+
             mysqli_close($connection);
         } else {
             echo "Error with database connection: " . mysqli_error($connection);
@@ -74,9 +89,9 @@ if(isset($_POST['submit'])) {
     <input type="submit" name="submit" value="submit" class="submitBtn">
 
     <?php $unitName = "unitNumber";
-    for($i = 0; $i < 5; $i++) { 
+    for($i = 0; $i < 3; $i++) { 
         for($j = 0; $j < 7; $j++) { ?>
-            <input type="hidden" value="" id="<?php echo $unitName . $i . $j ?>">
+            <input type="hidden" value="" name="<?php echo $unitName . $i . $j ?>" id="<?php echo $unitName . $i . $j ?>">
             <?php }
             } ?>
 </form>

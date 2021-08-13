@@ -12,7 +12,7 @@
         
         <div class="unitContainer">
             <?php $containerStrings = array("unitName", "unitPortrait", "unitCookies", "unitAmount", "unitCost")?>
-            <?php for($i = 0; $i < 5; $i++) { ?>
+            <?php for($i = 0; $i < 3; $i++) { ?>
 
             <div class="singleUnitCard">
                 <div class="unitName"  id="<?php echo $containerStrings[0] . $i ?>"></div>
@@ -34,7 +34,7 @@
 
         </div>
     </div>
-
+    
     <?php include('saveGame.php');?>
 
 

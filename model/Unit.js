@@ -32,9 +32,18 @@ class Unit {
         return this.intervalTime;
     }
 
+    getMultiplyer() {
+        return this.multiplyer;
+    }
+
+    getCostMultiplyer() {
+        return this.costMultiplyer;
+    }
+
     setCookies(cookies) {
         this.cookies = cookies * multiplyer;
     }
+    
 
     setCost() {
         this.cost *= this.costMultiplyer;

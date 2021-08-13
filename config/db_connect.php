@@ -16,5 +16,4 @@ $lastSave = end($allUserSaves);
 $lastSaveID = $lastSave["userID"];
 
 mysqli_free_result($result);
-
 ?>

@@ -14,7 +14,7 @@
             <div class="navBtn">Tutorial</div>
         </div>
 
-        <div class="saveBtn" id ="saveBtnID">Save game</div>
+        <div class="saveBtn" id="saveBtnID">Save game</div>
 
 
         <h3 class="navTitle">Cookie Clicker V2.0</h3>

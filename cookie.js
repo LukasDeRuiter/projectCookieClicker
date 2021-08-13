@@ -62,8 +62,22 @@ function setHtmlelements(unitValue) {
 // Saving statistics
 
 document.getElementById('saveBtnID').addEventListener('click', function() {
-    document.getElementById('saveContainerID').setAttribute("display", "flex");
+    console.log(units.length);
+    //document.getElementById('saveContainerID').setAttribute("display", "flex");
+    for(let i = 0; i < units.length; i++) {
+        document.getElementById(`unitNumber${i}0`).value = units[i].getName();
+        console.log(document.getElementById(`unitNumber${i}0`).value);
+        console.log(units[i].getName());
+        document.getElementById(`unitNumber${i}1`).value = units[i].getCookies();
+        document.getElementById(`unitNumber${i}2`).value = units[i].getCost();
+        document.getElementById(`unitNumber${i}3`).value = units[i].getAmount();
+        document.getElementById(`unitNumber${i}4`).value = units[i].getIntervalTime();
+        document.getElementById(`unitNumber${i}5`).value = units[i].getMultiplyer();
+        document.getElementById(`unitNumber${i}6`).value = units[i].getCostMultiplyer();
+    }
 })
+
+
 
 function test() {
     console.log(units[0].getAmount());
