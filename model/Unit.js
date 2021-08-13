@@ -38,6 +38,7 @@ class Unit {
 
     setCost() {
         this.cost *= this.costMultiplyer;
+        this.cost = Math.ceil(this.cost);
     }
 
     //Methods
