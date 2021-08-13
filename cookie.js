@@ -59,7 +59,11 @@ function setHtmlelements(unitValue) {
     document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
 }
 
+// Saving statistics
 
+document.getElementById('saveBtnID').addEventListener('click', function() {
+    document.getElementById('saveContainerID').setAttribute("display", "flex");
+})
 
 function test() {
     console.log(units[0].getAmount());

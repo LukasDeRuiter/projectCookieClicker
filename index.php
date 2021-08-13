@@ -35,6 +35,8 @@
         </div>
     </div>
 
+            <div class = "saveContainer" id="saveContainerID"><?php include('saveGame.php');?></div>
+
 
 
 
