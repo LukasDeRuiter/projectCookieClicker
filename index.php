@@ -12,11 +12,13 @@
         
         <div class="unitContainer">
             <?php $containerStrings = array("unitName", "unitPortrait", "unitCookies", "unitAmount", "unitCost")?>
-            <?php for($i = 0; $i < 3; $i++) { ?>
+            <?php for($i = 0; $i < 3; $i++) { 
+                $unitName = "assets/unitsvg" . $i . ".php";
+                ?>
 
             <div class="singleUnitCard">
                 <div class="unitName"  id="<?php echo $containerStrings[0] . $i ?>"></div>
-                <div class="unitPortrait"  id="<?php echo $containerStrings[1] . $i ?>"></div>
+                <div class="unitPortrait"  id="<?php echo $containerStrings[1] . $i ?>"><?php include("$unitName"); ?></div>
 
                 <div class="unitBtnContainer">
                     <div class="unitBtn" id="<?php echo $i ?>">1</div>
