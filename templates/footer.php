@@ -5,6 +5,5 @@
 
 </body>
 
-<script src="model/Counter.js"></script>
-<script src="model/Unit.js"></script>
+
 <script src="cookie.js"></script>
