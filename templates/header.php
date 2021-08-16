@@ -9,7 +9,7 @@
     
     <nav  class="navbar">
         <div class="navContainer">
-            <div class="navBtn">Game</div>
+            <a href="index.php"><div class="navBtn">Game</div></a>
             <a href="loadGame.php"><div class="navBtn">Load saves</div></a>
             <div class="navBtn">Tutorial</div>
         </div>
