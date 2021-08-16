@@ -9,9 +9,12 @@ if(isset($_POST['submit'])){
     foreach($allUserSaves as $saveFile){
         if($saveFile['userID'] == $test2 && $saveFile['userPassword'] == $test){
             echo "it WORKS!!!";
+            $linkToSavedGame = "Location: index.php?id=" . $saveFile['userID'];
+            header($linkToSavedGame);
         } else {
             echo "no match";
     }
+}
 }
 
 ?>
