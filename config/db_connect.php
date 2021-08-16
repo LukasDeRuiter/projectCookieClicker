@@ -1,9 +1,10 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'lukasderuiter', 'replaced', 'project_cookie_clicker');
+$connection = mysqli_connect('localhost', 'lukasderuiter', 'test650411', 'project_cookie_clicker');
 
 if(!$connection) {
     echo "error: " . mysqli_connect_error();
+    exit();
 }
 
 $sql = "SELECT * FROM user";
