@@ -2,7 +2,13 @@
 
 
 if(isset($_GET['id'])){
-    echo $_GET['id'];
+    include('config/db_connect_save.php');
+    for($i = 0; $i < 3; $i++) { 
+        for($j = 0; $j < 7; $j++) { ?>
+            <input type="hidden" value="" name="<?php echo $unitName . $i . $j ?>" id="<?php echo $unitName . $i . $j ?>">
+            <?php }
+            } 
+            print_r($allUnits);
 } else {
     echo "no save";
 }
