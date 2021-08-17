@@ -44,7 +44,9 @@
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
         <script src="createSaveUnits.js"></script>
-    <?php } ?>
+    <?php } else { ?>
+        <script src="createNewUnits.js"></script>
+        <?php } ?>
 
 
 

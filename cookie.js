@@ -1,5 +1,4 @@
 let counter = new Counter(0);
-let units = [];
 let number = 2;
 
 document.getElementById("clickableCookie").addEventListener('click', function() {
@@ -7,11 +6,6 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     
     counter.updateCounter();
 })
-
-units[0] = new Unit("Raccoon", 10, 50, 0, 9000);
-units[1] = new Unit("Groundhog", 16, 100, 0 , 16000);
-units[2] = new Unit("Gnome", 20, 200, 0 , 30000);
-
 
 for(let i = 0; i < units.length; i++) {
     sethtmlElementsAtStart(i);
