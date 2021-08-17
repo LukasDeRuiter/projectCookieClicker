@@ -15,7 +15,7 @@
         <div class="unitContainer">
             <?php $containerStrings = array("unitName", "unitPortrait", "unitCookies", "unitAmount", "unitCost")?>
             <?php for($i = 0; $i < 3; $i++) { 
-                $unitName = "assets/unitsvg" . $i . ".php";
+                $unitName = "assets/unitsvg" . "0" . ".php";
                 ?>
 
             <div class="singleUnitCard">

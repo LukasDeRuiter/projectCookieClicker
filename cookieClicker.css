@@ -125,13 +125,14 @@
 /* Main page: units */
 
 .singleUnitCard{
-    display: grid;
+    display: none;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 3px;
     width: auto;
     height: 10rem;
     margin-bottom: 1rem;
+    background-color: rgb(33, 158, 33);
 }
 
 .unitPortrait{
@@ -139,34 +140,54 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 5;
+    border: 4px solid rgb(24, 117, 24);
+    border-radius: 10px;
 }
 
 .unitName{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 7;
     color: white;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15));
+    border: 4px solid rgb(24, 117, 24);
+    border-radius: 10px;
 
 }
 
 .unitCookies{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
     color: white;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15));
+    border: 4px solid rgb(24, 117, 24);
+    border-radius: 10px;
 }
 
 .unitAmount{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 5;
     color: white;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15));
+    border: 4px solid rgb(24, 117, 24);
+    border-radius: 10px;
 }
 
 .unitBtnContainer{
@@ -184,8 +205,12 @@
 
 .unitBtn{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    border: 4px solid black;
+    border: 4px solid rgb(24, 117, 24);
+    border-radius: 10px;
     width: 4.2rem;
     height: 2.8rem;
     cursor: pointer;
@@ -194,12 +219,18 @@
 }
 
 .unitCost{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 7;
     color: white;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15));
+    border: 4px solid rgb(24, 117, 24);
+    border-radius: 10px;
 }
 
 html{
