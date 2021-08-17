@@ -9,4 +9,4 @@ for(let i = 0; i < 3 ; i++) {
     units[i] = new Unit(loadedName, loadedCookies, loadedCost, loadedAmount, loadedIntervalTime);
 }
 
-let counter = new Counter($oldCookies);
+let counterCookies = parseInt(document.getElementById("oldCookies").value);

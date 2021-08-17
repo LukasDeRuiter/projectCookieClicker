@@ -16,7 +16,7 @@ class Counter {
 
     //Methods
     addAmount(addWith) {
-        this.cookies = this.cookies + addWith;
+        this.cookies = parseInt(this.cookies + addWith);
     }
 
     updateCounter() {

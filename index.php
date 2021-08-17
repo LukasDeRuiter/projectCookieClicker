@@ -43,7 +43,6 @@
 
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
-      <?php  echo $oldCookies;  ?>
         <script src="createSaveUnits.js"></script>
     <?php } else { ?>
         <script src="createNewUnits.js"></script>

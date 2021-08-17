@@ -21,5 +21,7 @@ include('config/db_connect_load_user.php');
             <input type="hidden" value="<?php echo $actualUnit[0]['unitMultiplyer'] ?>" id="<?php echo "unitProperty6" . $i?>">
             <input type="hidden" value="<?php echo $actualUnit[0]['unitCostMultiplyer'] ?>" id="<?php echo "unitProperty7" . $i?>">
             <?php } ?>
+
+            <input type="hidden" value="<?php echo $oldCookies ?>" id="oldCookies">
     </form>
 </div>

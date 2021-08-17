@@ -1,5 +1,11 @@
 let number = 2;
 
+console.log(units[0]);
+console.log(units[1]);
+console.log(units[2]);
+
+counter = new Counter(counterCookies);
+
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(1);
     
@@ -69,13 +75,5 @@ document.getElementById('saveBtnID').addEventListener('click', function() {
         document.getElementById(`unitNumber${i}6`).value = units[i].getCostMultiplyer();
     }
 })
-
-
-
-function test() {
-    console.log(test2);
-}
-
-test();
 
 
