@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'lukasderuiter', '-', 'project_cookie_clicker');
+include('../connection.php');
 
 if(!$connection) {
     echo "error: " . mysqli_connect_error();
