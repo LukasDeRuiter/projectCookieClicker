@@ -1,6 +1,7 @@
 let number = 2;
 
 counter = new Counter(counterCookies);
+document.getElementById(`unitCard0`).style.display = "grid";
 
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(1);
@@ -34,10 +35,11 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
         counter.setCookies(counter.getCookies() - costOfPurchase);
         counter.updateCounter();
         units[button.id].buyUnit(parseInt(button.innerHTML));
+        checkIfNextUnitAvailable(parseInt(button.id));
         for(let i = 0; i < parseInt(button.innerHTML); i++) {
             units[button.id].setCost();
         } 
-        setHtmlelements(button.id);
+        setHtmlelements(parseInt(button.id));
     } else {
         console.log("Not enough cookies!");
     }
@@ -53,6 +55,14 @@ function setHtmlelements(unitValue) {
     document.getElementById(`unitAmount${unitValue}`).innerHTML = units[unitValue].getAmount();
     document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
 }
+
+function checkIfNextUnitAvailable(unitValue) {
+    if(units[unitValue].getAmount() >= 5) {
+        let nextUnit = unitValue + 1;
+        document.getElementById(`unitCard${nextUnit}`).style.display = "grid";
+    }
+}
+
 
 // Saving statistics
 

@@ -18,7 +18,7 @@
                 $unitName = "assets/unitsvg" . "0" . ".php";
                 ?>
 
-            <div class="singleUnitCard">
+            <div class="singleUnitCard" id="<?php echo "unitCard" . $i ?>">
                 <div class="unitName"  id="<?php echo $containerStrings[0] . $i ?>"></div>
                 <div class="unitPortrait"  id="<?php echo $containerStrings[1] . $i ?>"><?php include("$unitName"); ?></div>
 
