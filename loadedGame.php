@@ -2,6 +2,7 @@
 <?php
 
 include('config/db_connect_save.php');
+include('config/db_connect_load_user.php');
 
 ?>
 

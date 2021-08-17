@@ -1,4 +1,3 @@
-let counter = new Counter(0);
 let number = 2;
 
 document.getElementById("clickableCookie").addEventListener('click', function() {
