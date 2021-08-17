@@ -42,8 +42,9 @@
     <?php include('saveGame.php');?>
 
     <?php if(isset($_GET['id'])){
-        include('loadedGame.php');
-    }?>
+        include('loadedGame.php'); ?>
+        <script src="createSaveUnits.js"></script>
+    <?php } ?>
 
 
 

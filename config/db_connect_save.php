@@ -1,6 +1,6 @@
 <?php
 
-$connectionSave = mysqli_connect('localhost', 'lukasderuiter', '-', 'project_cookie_clicker');
+$connectionSave = mysqli_connect('localhost', 'lukasderuiter', 'test650411', 'project_cookie_clicker');
 
 if(!$connectionSave) {
     echo "error: " . mysqli_connect_error();

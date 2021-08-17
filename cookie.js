@@ -80,7 +80,9 @@ document.getElementById('saveBtnID').addEventListener('click', function() {
 
 
 function test() {
-    console.log(units[0].getAmount());
+    console.log(test2);
 }
+
+test();
 
 
