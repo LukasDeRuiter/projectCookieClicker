@@ -6,6 +6,7 @@
 <?php include('templates/header.php'); ?>
 
     <div class="mainContainer">
+    <div class="cookiePopups"></div>
         <div class="cookieContainer">
             <img src="assets/cookie1.png" class="cookie" id="clickableCookie">
             <p class="cookieNumber" id="counter">0</p>
