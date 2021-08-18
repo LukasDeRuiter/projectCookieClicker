@@ -1,12 +1,18 @@
+// Setup of the unitcards and the cookie
 let number = 2;
 
 counter = new Counter(counterCookies);
 document.getElementById(`unitCard0`).style.display = "grid";
 
+let clickOnCookie = new Audio();
+clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
+
+//functions for adding cookies
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(1);
     
     counter.updateCounter();
+    clickOnCookie.play();
 })
 
 for(let i = 0; i < units.length; i++) {
