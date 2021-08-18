@@ -67,7 +67,6 @@ function checkIfNextUnitAvailable(unitValue) {
 // Saving statistics
 
 document.getElementById('saveBtnID').addEventListener('click', function() {
-    console.log(units.length);
     document.getElementById('saveContainerID').style.display = "flex";
     document.getElementById("mainContainer").style.filter = "brightness(0.5)";
     for(let i = 0; i < units.length; i++) {
@@ -83,4 +82,8 @@ document.getElementById('saveBtnID').addEventListener('click', function() {
     }
 })
 
+document.getElementById('exitBtn').addEventListener('click', function() {
+    document.getElementById('saveContainerID').style.display = "none";
+    document.getElementById("mainContainer").style.filter = "brightness(1)";
+})
 

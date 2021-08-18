@@ -95,4 +95,5 @@ if(isset($_POST['submit'])) {
             <?php }
             } ?>
 </form>
+<button class="exitBtn" id="exitBtn">Cancel save</button>
 </div>

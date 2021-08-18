@@ -278,6 +278,7 @@
     display:none;
     flex-direction: column;
     position: absolute;
+    align-items: center;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -293,7 +294,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .saveTitle{
@@ -336,6 +337,7 @@
     cursor: pointer;
     transition-duration: 150ms;
     transform:scale(1, 1);
+    margin-bottom: 1rem;
 }
 
 .submitBtn:hover{
@@ -345,6 +347,26 @@
     box-shadow: 0 0 10px rgba(75, 218, 118, 0.8), 0 0 30px rgba(75, 218, 118, 0.8);
 }
 
+.exitBtn{
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    width:10rem;
+    height: 3rem;
+    border-radius: 15px;
+    background-color: rgba(218, 92, 75, 0.8);
+    cursor: pointer;
+    transition-duration: 150ms;
+    transform:scale(1, 1);
+    margin-bottom: 1rem;
+}
+
+.exitBtn:hover{
+    transition-duration: 150ms;
+    transform:scale(1.2, 1.2);
+    background-color: rgba(238, 59, 36, 0.8);
+    box-shadow: 0 0 10px rgba(238, 59, 36, 0.8), 0 0 30px rgba(238, 59, 36, 0.8);
+}
 
 
 html{
