@@ -74,8 +74,8 @@ if(isset($_POST['submit'])) {
 ?>
 
 <div class = "saveContainer" id="saveContainerID">
+<h2 class="saveTitle">Save your game here</h2>
 <form class="saveGameForm" method="POST" action="index.php">
-    <h2 class="saveTitle">Save your game here</h2>
     <label class="saveLabel">Please create a (unique) playerName: </label> <br>
     <input type="text" name="name" class="saveInputField" value="<?php echo htmlspecialchars($saveName) ?>">
     <p class="errormessage"><?php echo $nameError ?></p>

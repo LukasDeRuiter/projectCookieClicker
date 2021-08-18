@@ -5,7 +5,7 @@
 
 <?php include('templates/header.php'); ?>
 
-    <div class="mainContainer">
+    <div class="mainContainer" id="mainContainer">
 
     <div class="cookiePopupContainer">
     <?php for($i = 0; $i < 3; $i++) { ?>
@@ -48,8 +48,6 @@
         </div>
     </div>
     </div>
-    
-    <?php include('saveGame.php');?>
 
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
@@ -57,9 +55,10 @@
     <?php } else { ?>
         <script src="createNewUnits.js"></script>
         <?php } ?>
-
-
-
+        
+        
+        <?php include('saveGame.php');?>
 
 <?php include('templates/footer.php'); ?>
+
 </html>
