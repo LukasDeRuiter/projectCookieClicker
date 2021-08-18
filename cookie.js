@@ -10,29 +10,21 @@ clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
 //functions for adding cookies
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(1);
-    
     counter.updateCounter();
     clickOnCookie.play();
 })
 
 for(let i = 0; i < units.length; i++) {
     sethtmlElementsAtStart(i);
+    setInterval(`addUnitCookies(${i})`, units[i].getIntervalTime());
 }
 
-function addUnitCookiesRaccoon (){
-            counter.addAmount(units[0].createCookies());
+function addUnitCookies(unitValue) {
+    console.log(unitValue);
+            counter.addAmount(units[unitValue].createCookies());
             counter.updateCounter();
-            units[0].displayAddedCookies(0);
+            units[unitValue].displayAddedCookies(unitValue);
         };
-setInterval(addUnitCookiesRaccoon, units[0].getIntervalTime());
-
-function addUnitCookiesGroundhog (){
-    counter.addAmount(units[1].createCookies());
-    counter.updateCounter();
-    units[1].displayAddedCookies(1);
-};
-setInterval(addUnitCookiesGroundhog, units[1].getIntervalTime());
-
 
 let buttons = document.getElementsByClassName("unitBtn");
 

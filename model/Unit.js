@@ -60,11 +60,13 @@ class Unit {
     }
 
     displayAddedCookies(unitValue){
+        if(this.amount >= 1) {
         let addPopup = document.getElementById(`unitPopup${unitValue}`);
         addPopup.innerHTML = "+ " + this.createCookies() + " Cookies!";
         addPopup.style.animation = "addedCookies 5s 1";
         addPopup.onanimationend = function stopAnimation(){
             addPopup.style.animation = "noAddedCookies 1s infinite";
+        }
         }
     }
 
