@@ -60,11 +60,11 @@ class Unit {
     }
 
     displayAddedCookies(unitValue){
-        let addPopup = document.getElementById(`unitPopup${unitValue}`).style = "grid";
-        addPopup.innerHTML = "+ " + this.cookies + " Cookies!";
-        addPopup.style.animation = "inAndOut 5s 1";
+        let addPopup = document.getElementById(`unitPopup${unitValue}`);
+        addPopup.innerHTML = "+ " + this.createCookies() + " Cookies!";
+        addPopup.style.animation = "addedCookies 5s 1";
         addPopup.onanimationend = function stopAnimation(){
-            addPopup.style.animation = "noinAndOut 1s infinite";
+            addPopup.style.animation = "noAddedCookies 1s infinite";
         }
     }
 

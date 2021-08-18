@@ -6,7 +6,14 @@
 <?php include('templates/header.php'); ?>
 
     <div class="mainContainer">
-    <div class="cookiePopupContainer"></div>
+
+    <div class="cookiePopupContainer">
+    <?php for($i = 0; $i < 3; $i++) { ?>
+        <?php $popupName = "unitPopup" . $i ?>
+        <div class="cookiePopup" id="<?php echo $popupName ?>"></div>
+        <?php } ?>
+
+    </div>
     <div class="interactiveContainer">
         <div class="cookieContainer">
             <img src="assets/cookie1.png" class="cookie" id="clickableCookie">

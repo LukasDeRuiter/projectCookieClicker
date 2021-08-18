@@ -104,7 +104,7 @@
 /* Main page: cookie popups */
 .cookiePopupContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: rgba(23, 196, 202, 0.15);
     width: 100rem;
@@ -112,10 +112,26 @@
 }
 
 .cookiePopup{
+    display: flex;
+    opacity: 0;
     background-color: rgba(23, 196, 202, 0.5);
     width: 3rem;
     height: 3rem;
     border-radius: 15px;
+    margin-top: 3rem;
+}
+
+@keyframes addedCookies {
+    0% {opacity: 0;}
+    50% {transform: translateY(-3rem);
+        opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes noAddedCookies {
+    0% {opacity: 0;
+        transform: translateY(0rem);}
+    100% {opacity: 0;}
 }
 
 /* Main page: cookie */

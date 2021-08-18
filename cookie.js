@@ -22,12 +22,14 @@ for(let i = 0; i < units.length; i++) {
 function addUnitCookiesRaccoon (){
             counter.addAmount(units[0].createCookies());
             counter.updateCounter();
+            units[0].displayAddedCookies(0);
         };
 setInterval(addUnitCookiesRaccoon, units[0].getIntervalTime());
 
 function addUnitCookiesGroundhog (){
     counter.addAmount(units[1].createCookies());
     counter.updateCounter();
+    units[1].displayAddedCookies(1);
 };
 setInterval(addUnitCookiesGroundhog, units[1].getIntervalTime());
 
