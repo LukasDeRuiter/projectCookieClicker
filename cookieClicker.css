@@ -272,6 +272,80 @@
     border-radius: 10px;
 }
 
+/* Main page: save bar (shows up when clicking the save button on the header) */
+
+.saveContainer{
+    display:none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.2rem solid rgba(52, 110, 197, 0.8);
+    border-radius: 15px;
+    background-color: rgba(52, 151, 197, 0.15);
+    width: 35rem;
+    height:40rem;
+}
+
+.saveGameForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.saveTitle{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.saveLabel{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.saveInputField{
+    width:15rem;
+    height: 3rem;
+    font-size: 3rem;
+    color: white;
+    transition-duration: 50ms;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.2rem solid rgba(52, 110, 197, 0.8);
+    border-radius: 15px;
+}
+
+.saveInputField:hover{
+    transition-duration: 50ms;
+    background-color: rgba(75, 132, 218, 0.5);
+    box-shadow: 0 0 10px rgba(75, 132, 218, 0.8), 0 0 30px rgba(75, 132, 218, 0.8);
+}
+
+.submitBtn{
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    width:10rem;
+    height: 5rem;
+    border-radius: 15px;
+    background-color: rgba(75, 132, 218, 0.8);
+    cursor: pointer;
+    transition-duration: 150ms;
+    transform:scale(1, 1);
+}
+
+.submitBtn:hover{
+    transition-duration: 150ms;
+    transform:scale(1.5, 1.5);
+    background-color: rgba(75, 218, 118, 0.8);
+    box-shadow: 0 0 10px rgba(75, 218, 118, 0.8), 0 0 30px rgba(75, 218, 118, 0.8);
+}
+
+
+
 html{
     background-color: gray;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

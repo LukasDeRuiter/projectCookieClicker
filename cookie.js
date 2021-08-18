@@ -68,7 +68,7 @@ function checkIfNextUnitAvailable(unitValue) {
 
 document.getElementById('saveBtnID').addEventListener('click', function() {
     console.log(units.length);
-    //document.getElementById('saveContainerID').setAttribute("display", "flex");
+    document.getElementById('saveContainerID').style.display = "flex";
     for(let i = 0; i < units.length; i++) {
         document.getElementById(`unitNumber${i}0`).value = units[i].getName();
         console.log(document.getElementById(`unitNumber${i}0`).value);
