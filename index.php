@@ -6,7 +6,8 @@
 <?php include('templates/header.php'); ?>
 
     <div class="mainContainer">
-    <div class="cookiePopups"></div>
+    <div class="cookiePopupContainer"></div>
+    <div class="interactiveContainer">
         <div class="cookieContainer">
             <img src="assets/cookie1.png" class="cookie" id="clickableCookie">
             <p class="cookieNumber" id="counter">0</p>
@@ -38,6 +39,7 @@
             <?php } ?>
 
         </div>
+    </div>
     </div>
     
     <?php include('saveGame.php');?>

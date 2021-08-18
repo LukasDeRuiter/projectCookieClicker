@@ -74,11 +74,17 @@
 
 .mainContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100rem;
     height: 40rem;
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 1rem;
+}
+
+.interactiveContainer{
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
 }
 
 .cookieContainer{
@@ -95,7 +101,22 @@
     width: 30rem;
 }
 
-/* */
+/* Main page: cookie popups */
+.cookiePopupContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(23, 196, 202, 0.15);
+    width: 100rem;
+    height: 6rem;
+}
+
+.cookiePopup{
+    background-color: rgba(23, 196, 202, 0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 15px;
+}
 
 /* Main page: cookie */
 
