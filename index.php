@@ -57,7 +57,7 @@
         <?php } ?>
         
         
-        <?php include('saveGame.php');?>
+        <?php include('templates/saveGame.php');?>
 
 <?php include('templates/footer.php'); ?>
 
