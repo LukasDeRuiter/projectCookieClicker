@@ -1,7 +1,7 @@
 class Cookie {
 
     //constructor
-    constructor(clickPower, level, image) {
+    constructor(clickPower, level) {
         this.clickPower = clickPower;
         this.level = level;
     }
@@ -25,8 +25,8 @@ class Cookie {
 
     //Methods
     updateCookie() {
+        let cookieID = document.getElementById("clickableCookie");
         let imageSrc = `assets/cookieAssets/cookie${this.level}.png`;
-        document.getElementById("clickableCookie").src = imageSrc;
+        cookieID.src = imageSrc;
     }
-
 }

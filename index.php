@@ -16,7 +16,7 @@
     </div>
     <div class="interactiveContainer">
         <div class="cookieContainer">
-            <img src="" class="cookie" id="clickableCookie">
+            <img class="cookie" id="clickableCookie">
             <p class="cookieNumber" id="counter">0</p>
 
         </div>
