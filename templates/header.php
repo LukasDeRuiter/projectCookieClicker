@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="cookieClicker.css" rel="stylesheet">
     <script src="model/Counter.js"></script>
+    <script src="model/Cookie.js"></script>
     <script src="model/Unit.js"></script>
     <title>Cookie Clicker 2.0 PHP version made by Lukas de Ruiter</title>
 </head>

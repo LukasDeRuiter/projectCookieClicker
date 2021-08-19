@@ -1,10 +1,9 @@
 class Cookie {
 
     //constructor
-    constructor(clickPower, image, level) {
+    constructor(clickPower, level, image) {
         this.clickPower = clickPower;
         this.level = level;
-        this.image = image;
     }
 
     //getters and setters
@@ -24,12 +23,10 @@ class Cookie {
         this.level = level;
     }
 
-    getImage() {
-        return this.image;
-    }
-
-    setImage(image) {
-        this.image = image;
+    //Methods
+    updateCookie() {
+        let imageSrc = `assets/cookieAssets/cookie${this.level}.png`;
+        document.getElementById("clickableCookie").src = imageSrc;
     }
 
 }

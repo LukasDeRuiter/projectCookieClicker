@@ -2,6 +2,8 @@
 let number = 2;
 
 counter = new Counter(counterCookies);
+cookie = new Cookie();
+
 document.getElementById(`unitCard0`).style.display = "grid";
 
 let clickOnCookie = new Audio();
