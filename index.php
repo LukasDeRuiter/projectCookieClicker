@@ -50,12 +50,12 @@
 
     <div class="optionsContainer">
         <div class="tabsContainer">
+            <div class="tabsBtn">Player</div>
+            <div class="tabsBtn">Cookie</div>
+            <div class="tabsBtn">Units</div>
             <div class="tabsBtn"></div>
             <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
+            <div class="tabsBtn">Devotion</div>
             <div class="tabsBtn"></div>
             <div class="tabsBtn"></div>
             <div class="tabsBtn"></div>
@@ -64,6 +64,7 @@
         <div class="tabs">
             </div>
     </div>
+</div>
 
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
