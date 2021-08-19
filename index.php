@@ -47,6 +47,22 @@
 
         </div>
     </div>
+
+    <div class="optionsContainer">
+        <div class="tabsContainer">
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            <div class="tabsBtn"></div>
+            </div>
+
+        <div class="tabs">
+            </div>
     </div>
 
     <?php if(isset($_GET['id'])){
