@@ -10,7 +10,7 @@
      id="defs2" />
   <g
      id="layer1">
-    <rect class="unitBody"
+    <rect class="unitBody0"
        style="fill:#008080;stroke:#008080;stroke-width:1.81926"
        id="rect846"
        width="167.04323"
@@ -19,7 +19,7 @@
        y="44.274052"
        rx="19.007481"
        ry="25.14908" />
-    <rect class="eyebrow2"
+    <rect class="eyebrow20"
        style="fill:#5eaae7;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
        id="rect1380-3"
        width="68.538467"
@@ -28,24 +28,24 @@
        y="32.476139"
        rx="0"
        ry="7.8533654"/>
-    <path class="mouth"
+    <path class="mouth0"
        style="fill:#780000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
        id="path1068-3"
        d="m 145.03731,193.64169 a 63.401443,43.03632 0 0 1 -31.70072,37.27055 63.401443,43.03632 0 0 1 -63.401449,0 63.401443,43.03632 0 0 1 -31.70072,-37.27055 h 63.401443 z"
        transform="matrix(1,0,0.09508059,0.99546958,0,0)" />
-    <circle class="eye"
+    <circle class="eye0"
        style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1020-4"
        cx="133.50722"
        cy="148.5"
        r="25" />
-    <circle class="eye"
+    <circle class="eye0"
        style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1020"
        cx="71.037262"
        cy="150.99878"
        r="25" />
-    <ellipse class="eyelid"
+    <ellipse class="eyelid0"
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1068"
        cx="139.14485"
@@ -53,7 +53,7 @@
        rx="7"
        ry="10"
        transform="rotate(40.855425)" />
-    <rect class="eyebrow1"
+    <rect class="eyebrow10"
        style="fill:#5eaae7;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
        id="rect1380"
        width="68.538467"
@@ -65,7 +65,7 @@
   </g>
   <g
      id="layer2">
-    <ellipse class="eyelid"
+    <ellipse class="eyelid0"
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1068-5"
        cx="187.87611"
@@ -73,7 +73,7 @@
        rx="7"
        ry="10"
        transform="rotate(40.855425)" />
-    <path class="tongue"
+    <path class="tongue0"
        style="fill:#aa0000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1068-3-8"
        transform="matrix(1,0,0.01749889,0.99984688,0,0)"
@@ -82,35 +82,35 @@
 </svg>
 
 <style>
-    .eyebrow2{
+    .eyebrow20{
         transition-duration: 100ms;
         transform: rotate(22.577493deg);
-        animation: idle2 3s infinite alternate;
+        animation: idle20 3s infinite alternate;
     }
 
-    .eyebrow1{
+    .eyebrow10{
         transition-duration: 100ms;
         transform: rotate(-15.577493deg);
-        animation: idle1 3s infinite alternate;
+        animation: idle10 3s infinite alternate;
     }
 
-    @keyframes idle2 {
+    @keyframes idle20 {
         0% {transform: translateY(0%) rotate(22.577493deg);}
         50% {transform: translateY(5%) rotate(22.577493deg);}
-        10% {transform: translateY(0%) rotate(22.577493deg);}
+        100% {transform: translateY(0%) rotate(22.577493deg);}
     }
 
-    @keyframes idle1 {
+    @keyframes idle10 {
         0% {transform: translateY(0%) rotate(-15.577493deg);}
         50% {transform: translateY(5%) rotate(-15.577493deg);}
-        10% {transform: translateY(0%) rotate(-15.577493deg);}
+        100% {transform: translateY(0%) rotate(-15.577493deg);}
     }
 
-    .mouth {
+    .mouth0 {
         animation: mouthIdle 0.5s infinite linear;
     }
 
-    .tongue {
+    .tongue0 {
         animation: tongueIdle 0.5s infinite linear;
     }
 
@@ -130,11 +130,11 @@
         100% {transform: skewX(0deg) matrix(1,0,0.01749889,0.99984688,0,0);}
     }
 
-    .eye {
+    .eye0 {
         animation: eyeIdle 3s infinite alternate;
     }
 
-    .eyelid{
+    .eyelid0{
         animation: eyelidIdle 3s infinite alternate;
     }
 
