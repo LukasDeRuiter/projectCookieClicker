@@ -5,6 +5,8 @@ counter = new Counter(counterCookies);
 cookie = new Cookie(1, 1);
 
 cookie.updateCookie();
+counter.updateCounter();
+
 document.getElementById(`unitCard0`).style.display = "grid";
 
 let clickOnCookie = new Audio();
@@ -20,6 +22,7 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
 for(let i = 0; i < units.length; i++) {
     sethtmlElementsAtStart(i);
     setInterval(`addUnitCookies(${i})`, units[i].getIntervalTime());
+    checkIfNextUnitAvailable(i);
 }
 
 function addUnitCookies(unitValue) {
