@@ -425,6 +425,17 @@
 
 }
 
+.unitsTab{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.upgradeContainer{
+    height: 12rem;
+    width: 12rem;
+}
 
 html{
     background-color: gray;

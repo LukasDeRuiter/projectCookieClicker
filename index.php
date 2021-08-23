@@ -62,9 +62,9 @@
             </div>
 
         <div class="tabs">
-            </div>
+            <?php include('templates/tabs.php');?>
+        </div>
     </div>
-</div>
 
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
