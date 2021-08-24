@@ -1,16 +1,16 @@
 class Upgrade {
 
     //Variables
-    nextID = 0;
+    static nextID = 0;
 
     //constructor
     constructor(name, description, cost, isBought, unitNumber) {
         this.name = name;
         this.description = description;
         this.cost = cost;
-        this.unitNumber = unitNumber;
         this.isBought = isBought;
-        this.upgradeID = nextID++;
+        this.unitNumber = unitNumber;
+        this.upgradeID = Upgrade.nextID++;
     }
 
     //Getters and setters
@@ -64,4 +64,7 @@ class Upgrade {
     }
 
     //Methods
+    giveID() {
+        return nextID++;
+    }
 }

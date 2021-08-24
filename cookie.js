@@ -67,9 +67,9 @@ function setHtmlelements(unitValue) {
 }
 
 function setHtmlElementsForUpgrades(upgradeValue) {
-    document.getElementById(`upgradeName`).innerHTML = upgrades[upgradeValue].getName();
-    document.getElementById(`upgradeDescription`).innerHTML = upgrades[upgradeValue].getDescription();
-    document.getElementById(`upgradeCost`).innerHTML = upgrades[upgradeValue].getCost();
+    document.getElementById(`upgradeName${upgradeValue}`).innerHTML = upgrades[upgradeValue].getName();
+    document.getElementById(`upgradeDescription${upgradeValue}`).innerHTML = upgrades[upgradeValue].getDescription();
+    document.getElementById(`upgradeCost${upgradeValue}`).innerHTML = `Buy for ${upgrades[upgradeValue].getCost()} cookies`;
 }
 
 function checkIfNextUnitAvailable(unitValue) {

@@ -430,11 +430,22 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
+    overflow-x: scroll;
 }
 
 .upgradeContainer{
     height: 12rem;
     width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255 , 255 0.4);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.upgradeName{
+    text-align: center;
 }
 
 html{
