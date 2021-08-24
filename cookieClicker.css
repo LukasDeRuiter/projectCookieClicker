@@ -428,24 +428,41 @@
 .unitsTab{
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 100%;
     width: 100%;
     overflow-x: scroll;
 }
 
 .upgradeContainer{
-    height: 12rem;
+    height: 10rem;
     width: 12rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: rgba(255, 255 , 255 0.4);
+    align-items: center;
+    background-color: rgba(255, 255 , 255, 0.4);
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    border: 2px solid rgba(255, 255, 255 0.8);
+    border-radius: 8px;
 }
 
 .upgradeName{
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.upgradeDescription{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.upgradeBtn{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0.2rem;
 }
 
 html{
