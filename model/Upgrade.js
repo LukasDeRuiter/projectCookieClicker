@@ -69,10 +69,9 @@ class Upgrade {
     }
 
     buyUpgrade() {
-        units[this.getUnitNumber()].setMultiplyer(1);
-        console.log(units[this.getUnitNumber()].getMultiplyer());
-
-        //let container = `upgradeContainer${getUpgradeID}`;
-        //container.remove();
+        units[this.unitNumber].setMultiplyer(1);
+        document.getElementById(`unitCookies${this.unitNumber}`).innerHTML = units[this.unitNumber].getCookies() * units[this.unitNumber].getMultiplyer();
+        let container = document.getElementById(`upgradeContainer${this.upgradeID}`);
+        container.parentNode.removeChild(container);
     }
 }
