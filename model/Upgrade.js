@@ -67,4 +67,12 @@ class Upgrade {
     giveID() {
         return nextID++;
     }
+
+    buyUpgrade() {
+        units[this.getUnitNumber()].setMultiplyer(1);
+        console.log(units[this.getUnitNumber()].getMultiplyer());
+
+        //let container = `upgradeContainer${getUpgradeID}`;
+        //container.remove();
+    }
 }

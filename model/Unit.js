@@ -36,14 +36,13 @@ class Unit {
         return this.multiplyer;
     }
 
+    setMultiplyer(extraAmount) {
+        this.multiplyer += extraAmount;
+    }
+
     getCostMultiplyer() {
         return this.costMultiplyer;
     }
-
-    setCookies(cookies) {
-        this.cookies = cookies * multiplyer;
-    }
-    
 
     setCost() {
         this.cost *= this.costMultiplyer;
@@ -52,7 +51,7 @@ class Unit {
 
     //Methods
     createCookies() {
-        return this.cookies * this.amount;
+        return (this.cookies * this.multiplyer) * this.amount;
     }
 
     buyUnit(amountBought){
@@ -69,5 +68,4 @@ class Unit {
         }
         }
     }
-
 }
