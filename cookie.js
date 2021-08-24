@@ -25,12 +25,11 @@ for(let i = 0; i < units.length; i++) {
     checkIfNextUnitAvailable(i);
 }
 
-for(let i = 0; i < (units.length * 3); i++) {
+for(let i = 0; i < 9; i++) {
     setHtmlElementsForUpgrades(i);
 }
 
 function addUnitCookies(unitValue) {
-    console.log(unitValue);
             counter.addAmount(units[unitValue].createCookies());
             counter.updateCounter();
             units[unitValue].displayAddedCookies(unitValue);
@@ -55,6 +54,14 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
     }
 }))
 
+let upgradeButtons = document.getElementsByClassName("upgradeBtn");
+
+Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListener('click', function() {
+    let removeStringId = upgradeButton.id.replace("upgradeBtn", "");
+    let upgradeUnit = parseInt(removeStringId);
+    upgrades[upgradeUnit].buyUpgrade();
+}))
+
 function sethtmlElementsAtStart(unitValue){
     document.getElementById(`unitName${unitValue}`).innerHTML = units[unitValue].getName();
     setHtmlelements(unitValue);
@@ -69,7 +76,7 @@ function setHtmlelements(unitValue) {
 function setHtmlElementsForUpgrades(upgradeValue) {
     document.getElementById(`upgradeName${upgradeValue}`).innerHTML = upgrades[upgradeValue].getName();
     document.getElementById(`upgradeDescription${upgradeValue}`).innerHTML = upgrades[upgradeValue].getDescription();
-    document.getElementById(`upgradeCost${upgradeValue}`).innerHTML = `Buy for ${upgrades[upgradeValue].getCost()} cookies`;
+    document.getElementById(`upgradeBtn${upgradeValue}`).innerHTML = `Buy for ${upgrades[upgradeValue].getCost()} cookies`;
 }
 
 function checkIfNextUnitAvailable(unitValue) {
@@ -87,8 +94,6 @@ document.getElementById('saveBtnID').addEventListener('click', function() {
     document.getElementById("mainContainer").style.filter = "brightness(0.5)";
     for(let i = 0; i < units.length; i++) {
         document.getElementById(`unitNumber${i}0`).value = units[i].getName();
-        console.log(document.getElementById(`unitNumber${i}0`).value);
-        console.log(units[i].getName());
         document.getElementById(`unitNumber${i}1`).value = units[i].getCookies();
         document.getElementById(`unitNumber${i}2`).value = units[i].getCost();
         document.getElementById(`unitNumber${i}3`).value = units[i].getAmount();

@@ -74,7 +74,7 @@
         <script src="createNewUpgrades.js"></script>
         <?php } ?>
         
-        
+        </div>
         <?php include('templates/saveGame.php');?>
 
 <?php include('templates/footer.php'); ?>

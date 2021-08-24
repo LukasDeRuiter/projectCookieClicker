@@ -4,7 +4,7 @@
         <div class="upgradeContainer">
             <h3 class="upgradeName" id="<?php echo "upgradeName" . $i ?>"></h3>
             <p class="upgradeDescription" id="<?php echo "upgradeDescription" . $i ?>"></p>
-            <button class="upgradeBtn" id="<?php echo "upgradeCost" . $i ?>"></button>
+            <button class="upgradeBtn" id="<?php echo "upgradeBtn" . $i ?>"></button>
 
         </div>
 
