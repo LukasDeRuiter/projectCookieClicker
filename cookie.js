@@ -25,6 +25,10 @@ for(let i = 0; i < units.length; i++) {
     checkIfNextUnitAvailable(i);
 }
 
+for(let i = 0; i < (units.length * 3); i++) {
+    setHtmlElementsForUpgrades(i);
+}
+
 function addUnitCookies(unitValue) {
     console.log(unitValue);
             counter.addAmount(units[unitValue].createCookies());
@@ -60,6 +64,12 @@ function setHtmlelements(unitValue) {
     document.getElementById(`unitCookies${unitValue}`).innerHTML = units[unitValue].getCookies();
     document.getElementById(`unitAmount${unitValue}`).innerHTML = units[unitValue].getAmount();
     document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
+}
+
+function setHtmlElementsForUpgrades(upgradeValue) {
+    document.getElementById(`upgradeName`).innerHTML = upgrades[upgradeValue].getName();
+    document.getElementById(`upgradeDescription`).innerHTML = upgrades[upgradeValue].getDescription();
+    document.getElementById(`upgradeCost`).innerHTML = upgrades[upgradeValue].getCost();
 }
 
 function checkIfNextUnitAvailable(unitValue) {
