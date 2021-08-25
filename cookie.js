@@ -85,7 +85,7 @@ function sethtmlElementsAtStart(unitValue){
 }
 
 function setHtmlelements(unitValue) {
-    document.getElementById(`unitCookies${unitValue}`).innerHTML = units[unitValue].getCookies();
+    document.getElementById(`unitCookies${unitValue}`).innerHTML = (units[unitValue].getCookies() * units[unitValue].getMultiplyer());
     document.getElementById(`unitAmount${unitValue}`).innerHTML = units[unitValue].getAmount();
     document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
 }
