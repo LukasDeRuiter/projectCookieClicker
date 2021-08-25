@@ -62,6 +62,19 @@ Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListen
     upgrades[upgradeUnit].buyUpgrade();
 }))
 
+let tabsButtons = document.getElementsByClassName("tabsBtn");
+
+Array.from(tabsButtons).forEach(tabButton => tabButton.addEventListener('click', function() {
+    let yourTab = tabButton.id.replace("tabsBtn", "");
+    let displayedTab = document.getElementById(`tab${yourTab}`);
+    if(displayedTab.style.display == "none") {
+        displayedTab.style.display = "flex";
+        } else {
+            displayedTab.style.display = "none";
+        }
+}))
+
+
 function sethtmlElementsAtStart(unitValue){
     document.getElementById(`unitName${unitValue}`).innerHTML = units[unitValue].getName();
     setHtmlelements(unitValue);

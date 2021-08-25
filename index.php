@@ -52,7 +52,7 @@
         <div class="tabsContainer">
             <div class="tabsBtn">Player</div>
             <div class="tabsBtn">Cookie</div>
-            <div class="tabsBtn">Units</div>
+            <div class="tabsBtn" id="tabsBtn2">Units</div>
             <div class="tabsBtn"></div>
             <div class="tabsBtn"></div>
             <div class="tabsBtn">Devotion</div>

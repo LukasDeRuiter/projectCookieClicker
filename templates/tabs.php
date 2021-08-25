@@ -1,4 +1,4 @@
-<div class="unitsTab">
+<div class="unitsTab" id="tab2">
     <?php for($i = 0; $i < 9; $i++) { ?>
 
         <div class="upgradeContainer" id="<?php echo "upgradeContainer" . $i ?>">
