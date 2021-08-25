@@ -50,15 +50,15 @@
 
     <div class="optionsContainer">
         <div class="tabsContainer">
-            <div class="tabsBtn">Player</div>
-            <div class="tabsBtn">Cookie</div>
+            <div class="tabsBtn" id="tabsBtn0">Player</div>
+            <div class="tabsBtn" id="tabsBtn1">Cookie</div>
             <div class="tabsBtn" id="tabsBtn2">Units</div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn">Devotion</div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
-            <div class="tabsBtn"></div>
+            <div class="tabsBtn" id="tabsBtn3"></div>
+            <div class="tabsBtn" id="tabsBtn4"></div>
+            <div class="tabsBtn" id="tabsBtn5">Devotion</div>
+            <div class="tabsBtn" id="tabsBtn6"></div>
+            <div class="tabsBtn" id="tabsBtn7"></div>
+            <div class="tabsBtn" id="tabsBtn8"></div>
             </div>
 
         <div class="tabs">

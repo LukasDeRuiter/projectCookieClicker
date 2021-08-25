@@ -1,3 +1,10 @@
+<div id="tab0"></div>
+
+<div class="cookieTab" id="tab1">
+
+</div>
+
+
 <div class="unitsTab" id="tab2">
     <?php for($i = 0; $i < 9; $i++) { ?>
 
@@ -14,3 +21,9 @@
 
 </div>
 
+<div id="tab3"></div>
+<div id="tab4"></div>
+<div id="tab5"></div>
+<div id="tab6"></div>
+<div id="tab7"></div>
+<div id="tab8"></div>

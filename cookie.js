@@ -65,6 +65,10 @@ Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListen
 let tabsButtons = document.getElementsByClassName("tabsBtn");
 
 Array.from(tabsButtons).forEach(tabButton => tabButton.addEventListener('click', function() {
+    for(let i = 0; i < 9; i++) {
+        document.getElementById(`tab${i}`).style.display = "none";
+    }
+
     let yourTab = tabButton.id.replace("tabsBtn", "");
     let displayedTab = document.getElementById(`tab${yourTab}`);
     if(displayedTab.style.display == "none") {

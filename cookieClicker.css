@@ -425,6 +425,8 @@
 
 }
 
+/* Upgrades */
+
 .unitsTab{
     display: flex;
     flex-direction: row;
@@ -463,6 +465,18 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: 0.2rem;
+}
+
+/* Cookie */
+
+.cookieTab{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    background-color: red;
 }
 
 html{
