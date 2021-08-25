@@ -39,6 +39,8 @@ function addUnitCookies(unitValue) {
 
 let buttons = document.getElementsByClassName("unitBtn");
 
+
+//Buying new units
 Array.from(buttons).forEach(button => button.addEventListener('click', function() {
     let costOfPurchase = button.innerHTML * units[button.id].getCost();
     let yourAmountOfCookies = counter.getCookies();
@@ -56,6 +58,7 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
     }
 }))
 
+//Buying upgrades
 let upgradeButtons = document.getElementsByClassName("upgradeBtn");
 
 Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListener('click', function() {
@@ -64,6 +67,12 @@ Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListen
     upgrades[upgradeUnit].buyUpgrade();
 }))
 
+//Buying cookie specific upgrades
+document.getElementById("cookieUpgradeBtn").addEventListener('click', function() {
+    cookie.buyCookieUpgrade();
+})
+
+//Swapping tabs
 let tabsButtons = document.getElementsByClassName("tabsBtn");
 
 Array.from(tabsButtons).forEach(tabButton => tabButton.addEventListener('click', function() {
