@@ -2,6 +2,19 @@
 
 <div class="cookieTab" id="tab1">
 
+<?php for($i = 0; $i < 3; $i++) { ?>
+
+<div class="cookieUpgradeContainer" id="<?php echo "cookieUpgradeContainer" . $i ?>">
+    <h3 class="cookieUpgradeName" id="<?php echo "cookieUpgradeName" . $i ?>"></h3>
+    <p class="cookieUpgradeDescription" id="<?php echo "cookieUpgradeDescription" . $i ?>"></p>
+    <button class="cookieUpgradeBtn" id="<?php echo "cookieUpgradeBtn" . $i ?>"></button>
+
+</div>
+
+
+
+<?php } ?>
+
 </div>
 
 
