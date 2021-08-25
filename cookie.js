@@ -5,6 +5,8 @@ counter = new Counter(counterCookies);
 cookie = new Cookie(1, 1);
 
 cookie.updateCookie();
+cookie.updateUpgradeContainer();
+
 counter.updateCounter();
 
 document.getElementById(`unitCard0`).style.display = "grid";
@@ -14,7 +16,7 @@ clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
 
 //functions for adding cookies
 document.getElementById("clickableCookie").addEventListener('click', function() {
-    counter.addAmount(1);
+    counter.addAmount(cookie.getClickPower());
     counter.updateCounter();
     clickOnCookie.play();
 })
