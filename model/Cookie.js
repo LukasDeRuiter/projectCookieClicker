@@ -31,7 +31,7 @@ class Cookie {
     //Methods
     updateCookie() {
         let cookieID = document.getElementById("clickableCookie");
-        let imageSrc = `assets/cookieAssets/cookie${this.level}.png`;
+        let imageSrc = `assets/cookieAssets/cookie${this.level}.svg`;
         cookieID.src = imageSrc;
     }
     
