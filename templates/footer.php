@@ -5,5 +5,5 @@
 
 </body>
 
-
+<script src="model/RandomCookie.js"></script>
 <script src="cookie.js"></script>

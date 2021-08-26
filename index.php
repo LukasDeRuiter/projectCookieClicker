@@ -14,10 +14,17 @@
         <?php } ?>
 
     </div>
+
     <div class="interactiveContainer">
         <div class="cookieContainer">
+
+        <div class="randomCookiePopup" id="randomCookie0"><img src="assets/cookieAssets/cookie1.svg"></div>
+        <div class="randomCookiePopup" id="randomCookie1"><img src="assets/cookieAssets/cookie1.svg"></div>
+
             <img class="cookie" id="clickableCookie">
             <p class="cookieNumber" id="counter">0</p>
+
+            <div class="randomCookiePopup" id="randomCookie2"><img src="assets/cookieAssets/cookie1.svg"></div>
 
         </div>
         

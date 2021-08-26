@@ -3,6 +3,7 @@ let number = 2;
 
 counter = new Counter(counterCookies);
 cookie = new Cookie(1, 1);
+randomCookie = new RandomCookie(500);
 
 cookie.updateCookie();
 cookie.updateUpgradeContainer();
@@ -21,6 +22,13 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     clickOnCookie.play();
     let randomChance = Math.floor(Math.random() * 100);
     console.log(randomChance);
+    if(randomCookie.getCookieActive()) {
+        randomCookie.disappearOnAllElements();
+    }
+
+    if(randomChance > 70) {
+        randomCookie.appearOnRandomElement();
+    }
 })
 
 for(let i = 0; i < units.length; i++) {
