@@ -38,7 +38,7 @@ class Cookie {
     updateUpgradeContainer() {
         document.getElementById("cookieUpgradeName").innerHTML = Cookie.cookieUpgradesName[this.level + 1];
         document.getElementById("cookieUpgradeDescription").innerHTML = Cookie.cookieUpgradesDescription[this.level + 1];
-        document.getElementById("cookieUpgradeBtn").innerHTML = Cookie.cookieUpgradesCost[this.level + 1];
+        document.getElementById("cookieUpgradeBtn").innerHTML = `Cost: ${Cookie.cookieUpgradesCost[this.level + 1]}`;
     }
 
     buyCookieUpgrade() {

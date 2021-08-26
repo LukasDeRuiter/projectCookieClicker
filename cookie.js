@@ -19,6 +19,8 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     counter.addAmount(cookie.getClickPower());
     counter.updateCounter();
     clickOnCookie.play();
+    let randomChance = Math.floor(Math.random() * 100);
+    console.log(randomChance);
 })
 
 for(let i = 0; i < units.length; i++) {
