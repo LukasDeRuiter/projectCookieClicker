@@ -85,10 +85,19 @@ document.getElementById("cookieUpgradeBtn").addEventListener('click', function()
 })
 
 //User tab for eating cookies and leveling up
-document.getElementById("cookieTest").addEventListener('click', function() {
-    user.eatCookies(counter, 10);
+let eatingButtons = document.getElementsByClassName("cookieEatingBtn");
 
-})
+Array.from(eatingButtons).forEach(eatingButton =>eatingButton.addEventListener('click', function() {
+    if(eatingButton.value == "allCookies") {
+        if(user.getCookieLevelCap() >= parseInt(counter.getCookies())) {
+        user.eatCookies(counter, parseInt(counter.getCookies()));
+        }
+    } else {
+        if(user.getCookieLevelCap() >= parseInt(eatingButton.value)) {
+        user.eatCookies(counter, parseInt(eatingButton.value));
+        }
+    }
+}))
 
 //Swapping tabs
 let tabsButtons = document.getElementsByClassName("tabsBtn");

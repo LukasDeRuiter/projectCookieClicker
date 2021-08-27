@@ -7,7 +7,10 @@
 <div class="eatingOptions">
     <p id="userCookiesEaten"></p>
     <p id="userCookiesLevelCap"></p>
-    <button id="cookieTest"></button>
+    <button class="cookieEatingBtn" value="10">10</button>
+    <button class="cookieEatingBtn" value="100">100</button>
+    <button class="cookieEatingBtn" value="500">500</button>
+    <button class="cookieEatingBtn" value="allCookies">All</button>
 </div>
 
 </div>
