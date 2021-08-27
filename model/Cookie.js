@@ -1,9 +1,10 @@
 class Cookie {
 
     //Variables
-    static cookieUpgradesName = ["", "", "Dark Chocolate", "White Chocolate", "Jumbo Quality"];
-    static cookieUpgradesDescription = ["", "", "Get some dark chocolate cookie", "Upgrade to white chocolate!", "Upgrade to jumbo's quality cookie!"];
-    static cookieUpgradesCost = [0, 0, 500, 1000, 1500];
+    static cookieUpgradesName = ["", "", "Medium Cookie", "Large Cookie", "Chocolate Chip Cookie", "Dark Chocolate Cookie", "White Chocolate Chip Cookie", "Cranberry Cookie"];
+    static cookieUpgradesDescription = ["", "", "Upgrade to a larger cookie!", "Even more Cookie!", "No cookie is complete without chocolate chips!", 
+    "Get some of those good dark chocolate cookies!", "White chocolate is my favorite chocolate!", "Cranberries make everything better!"];
+    static cookieUpgradesCost = [0, 0, 500, 1000, 1500, 2000, 2500, 3000];
 
     //constructor
     constructor(clickPower, level) {
