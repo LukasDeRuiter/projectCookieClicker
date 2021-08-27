@@ -522,6 +522,22 @@
     margin-bottom: 0.2rem;
 }
 
+@keyframes changeCookie1 {
+    0% {transform: scale(1, 1);}
+    25% {transform: scale(1.5, 1.5);}
+    50% {transform: scale(1, 1) rotate(180deg);}
+    75% {transform: scale(0.5, 0.5);}
+    100% {transform: scale(0.1, 0.1) rotate(360deg);}
+}
+
+@keyframes changeCookie2 {
+    0% {transform: scale(0.1, 0.1);}
+    25% {transform: scale(0.5, 0.5);}
+    50% {transform: scale(1, 1) rotate(180deg);}
+    75% {transform: scale(1.5, 1.5);}
+    100% {transform: scale(1, 1) rotate(360deg);}
+}
+
 /* User */
 
 .userTab{

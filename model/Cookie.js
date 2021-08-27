@@ -32,8 +32,13 @@ class Cookie {
     //Methods
     updateCookie() {
         let cookieID = document.getElementById("clickableCookie");
+        cookieID.style.animation = "changeCookie1 0.5s 1 ease-in";
         let imageSrc = `assets/cookieAssets/cookie${this.level}.svg`;
-        cookieID.src = imageSrc;
+        cookieID.addEventListener('animationend', function() {
+            cookieID.src = imageSrc;
+            cookieID.style.animation = "changeCookie2 0.5s 1 ease-out";
+
+        })
     }
     
     updateUpgradeContainer() {
