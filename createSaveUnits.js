@@ -1,6 +1,8 @@
 let units = [];
 
-for(let i = 0; i < 3 ; i++) {
+let amountOfUnits = parseInt(document.getElementById("amountOfUnits").value);
+
+for(let i = 0; i < amountOfUnits ; i++) {
     let loadedName = document.getElementById(`unitProperty1${i}`).value;
     let loadedCookies = parseInt(document.getElementById(`unitProperty2${i}`).value);
     let loadedCost = parseInt(document.getElementById(`unitProperty3${i}`).value);

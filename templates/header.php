@@ -3,6 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="cookieClicker.css" rel="stylesheet">
+    <?php include('unitConfig.php');?>
     <script src="model/Counter.js"></script>
     <script src="model/Cookie.js"></script>
     <script src="model/Unit.js"></script>

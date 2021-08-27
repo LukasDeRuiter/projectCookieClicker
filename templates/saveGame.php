@@ -47,7 +47,7 @@ if(isset($_POST['submit'])) {
 
         if(mysqli_query($connection, $sql)) {
 
-            for($i = 0; $i < 3; $i++) {
+            for($i = 0; $i < $amountOfUnits; $i++) {
             $saveUnitName = $_POST['unitNumber' . $i . '0'];
             $saveUnitCookies = $_POST['unitNumber' . $i . '1'];
             $saveUnitCost = $_POST['unitNumber' . $i . '2'];

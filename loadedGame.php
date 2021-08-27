@@ -10,7 +10,7 @@ include('config/db_connect_load_user.php');
 <form>
 <?php
 
-    for($i = 0; $i < 3; $i++) { 
+    for($i = 0; $i < $amountOfUnits; $i++) { 
     $actualUnit = array($allUnits[$i]);
     ?>
             <input type="hidden" value="<?php echo $actualUnit[0]['unitName'] ?>" id="<?php echo "unitProperty1" . $i?>">

@@ -8,7 +8,7 @@
     <div class="mainContainer" id="mainContainer">
 
     <div class="cookiePopupContainer">
-    <?php for($i = 0; $i < 3; $i++) { ?>
+    <?php for($i = 0; $i < $amountOfUnits; $i++) { ?>
         <?php $popupName = "unitPopup" . $i ?>
         <div class="cookiePopup" id="<?php echo $popupName ?>"></div>
         <?php } ?>
@@ -28,7 +28,7 @@
         
         <div class="unitContainer">
             <?php $containerStrings = array("unitName", "unitPortrait", "unitCookies", "unitAmount", "unitCost")?>
-            <?php for($i = 0; $i < 3; $i++) { 
+            <?php for($i = 0; $i < $amountOfUnits; $i++) { 
                 $unitName = "assets/unitsvg" . $i . ".php";
                 ?>
 
