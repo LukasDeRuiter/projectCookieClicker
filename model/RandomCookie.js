@@ -22,8 +22,7 @@ class RandomCookie {
 
     //Methods
     appearOnRandomElement() {
-            let chosenElement = Math.floor(Math.random() * 3);
-            let ChosenElementID = `randomCookie${chosenElement}`;
+            let ChosenElementID = `randomCookie`;
 
             let chosenElementLeft = Math.floor(Math.random() * 100);
             let chosenElementTop = Math.floor(Math.random() * 100);
@@ -50,10 +49,9 @@ class RandomCookie {
     }
 
     disappearOnAllElements() {
-        for(let i = 0; i < 3; i++) {
-            document.getElementById(`randomCookie${i}`).style.display = "none";
+
+            document.getElementById(`randomCookie`).style.display = "none";
             this.cookieActive = false;
-        }
     }
 
 
