@@ -49,11 +49,12 @@ class RandomCookie {
     }
 
     disappearOnAllElements() {
-
             document.getElementById(`randomCookie`).style.display = "none";
             this.cookieActive = false;
     }
 
-
+    rewardAmountClicked(valueCookies) {
+        return valueCookies * 100;
+    }
 
 }

@@ -124,6 +124,12 @@ function checkIfNextUnitAvailable(unitValue) {
     }
 }
 
+//Random events
+document.getElementById("randomCookie").addEventListener('click', function() {
+    counter.addAmount(randomCookie.rewardAmountClicked(cookie.getClickPower()));
+    counter.updateCounter();
+    randomCookie.disappearOnAllElements();
+})
 
 // Saving statistics
 
