@@ -31,11 +31,30 @@ class User {
         this.eatenCookies -= this.cookieLevelCap;
         this.level += 1;
         this.cookieLevelCap *= 1.5;
+        this.updateUserUI();
     }
 
     checkIfLevelUp() {
         if(this.eatenCookies >= this.cookieLevelCap) {
-            levelUp();
+            this.levelUp();
+        }
+    }
+
+    updateUserUI() {
+        document.getElementById("userLevel").innerHTML = `Level: ${this.level}`;
+        document.getElementById("userCookiesLevelCap").innerHTML = `Level: ${this.cookieLevelCap}`;
+        this.updateCookiesEaten();
+    }
+
+    updateCookiesEaten() {
+        document.getElementById("userCookiesEaten").innerHTML = `Level: ${this.eatenCookies}`;
+    }
+
+    eatCookies(object, cookiesToEat) {
+        if(object.getCookies() >= cookiesToEat) {
+            object.setCookies(object.getCookies() - cookiesToEat);
+            this.eatenCookies += cookiesToEat;
+            this.updateCookiesEaten();
         }
     }
 

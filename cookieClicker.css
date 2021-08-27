@@ -522,6 +522,32 @@
     margin-bottom: 0.2rem;
 }
 
+/* User */
+
+.userTab{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    background-color: blue;
+}
+
+.levelContainer{
+    width:15rem;
+    height: 3rem;
+    background-color: rgba(44, 197, 77, 0.3);
+}
+
+.levelBar{
+    width: 8rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(44, 197, 77, 0.8);
+}
+
 
 html{
     background-color: gray;

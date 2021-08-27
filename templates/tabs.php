@@ -1,7 +1,8 @@
-<div id="tab0"></div>
+<div class="userTab" id="tab0">
+    <div class="levelContainer"><div class="levelBar" id="levelBarID"></div></div>
+</div>
 
 <div class="cookieTab" id="tab1">
-
 
 <div class="cookieUpgradeContainer" id="cookieUpgradeContainer">
     <h3 class="cookieUpgradeName" id="cookieUpgradeName"></h3>
