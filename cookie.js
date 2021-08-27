@@ -1,12 +1,14 @@
 // Setup of the unitcards and the cookie
 let number = 2;
 
+user = new User(1, 0, 100);
 counter = new Counter(counterCookies);
 cookie = new Cookie(1, 1);
 randomCookie = new RandomCookie(500);
 
 cookie.updateCookie();
 cookie.updateUpgradeContainer();
+user.updateUserUI();
 
 counter.updateCounter();
 
@@ -80,6 +82,12 @@ Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListen
 //Buying cookie specific upgrades
 document.getElementById("cookieUpgradeBtn").addEventListener('click', function() {
     cookie.buyCookieUpgrade();
+})
+
+//User tab for eating cookies and leveling up
+document.getElementById("cookieTest").addEventListener('click', function() {
+    user.eatCookies(counter, 10);
+
 })
 
 //Swapping tabs

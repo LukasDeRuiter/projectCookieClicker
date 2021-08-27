@@ -8,6 +8,7 @@
     <script src="model/Cookie.js"></script>
     <script src="model/Unit.js"></script>
     <script src="model/Upgrade.js"></script>
+    <script src="model/User.js"></script>
     <title>Cookie Clicker 2.0 PHP version made by Lukas de Ruiter</title>
 </head>
 <body>

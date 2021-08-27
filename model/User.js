@@ -30,7 +30,7 @@ class User {
     levelUp() {
         this.eatenCookies -= this.cookieLevelCap;
         this.level += 1;
-        this.cookieLevelCap *= 1.5;
+        this.cookieLevelCap = Math.ceil(this.cookieLevelCap * 1.5);
         this.updateUserUI();
     }
 
@@ -42,12 +42,14 @@ class User {
 
     updateUserUI() {
         document.getElementById("userLevel").innerHTML = `Level: ${this.level}`;
-        document.getElementById("userCookiesLevelCap").innerHTML = `Level: ${this.cookieLevelCap}`;
+        document.getElementById("userCookiesLevelCap").innerHTML = `Next level: ${this.cookieLevelCap}`;
         this.updateCookiesEaten();
     }
 
     updateCookiesEaten() {
-        document.getElementById("userCookiesEaten").innerHTML = `Level: ${this.eatenCookies}`;
+        document.getElementById("userCookiesEaten").innerHTML = `Cookies eaten: ${this.eatenCookies}`;
+        let widthPercentage = (this.eatenCookies / this.cookieLevelCap) * 100;
+        document.getElementById("levelBarID").style.width = `${widthPercentage}%`;
     }
 
     eatCookies(object, cookiesToEat) {
@@ -55,6 +57,8 @@ class User {
             object.setCookies(object.getCookies() - cookiesToEat);
             this.eatenCookies += cookiesToEat;
             this.updateCookiesEaten();
+            this.checkIfLevelUp();
+            object.updateCounter();
         }
     }
 

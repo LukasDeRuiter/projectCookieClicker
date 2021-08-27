@@ -1,6 +1,17 @@
 <div class="userTab" id="tab0">
+
+    <div class="currentLevelProgress"><p id="userLevel"></p>
     <div class="levelContainer"><div class="levelBar" id="levelBarID"></div></div>
 </div>
+
+<div class="eatingOptions">
+    <p id="userCookiesEaten"></p>
+    <p id="userCookiesLevelCap"></p>
+    <button id="cookieTest"></button>
+</div>
+
+</div>
+
 
 <div class="cookieTab" id="tab1">
 
