@@ -32,7 +32,7 @@
 
 
 <div class="unitsTab" id="tab2">
-    <?php for($i = 0; $i < 9; $i++) { ?>
+    <?php for($i = 0; $i < ($amountOfUnits * 3); $i++) { ?>
 
         <div class="upgradeContainer" id="<?php echo "upgradeContainer" . $i ?>">
             <h3 class="upgradeName" id="<?php echo "upgradeName" . $i ?>"></h3>

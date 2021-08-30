@@ -9,6 +9,17 @@ upgrades[5] = new Upgrade("Brocks positifity training", "Makes blob finally do h
 upgrades[6] = new Upgrade("Peeper stops peeping", "Makes blob finally do his best", 3500, false, 2);
 upgrades[7] = new Upgrade("Eye muscle training", "Makes blob finally do his best", 4000, false, 2);
 upgrades[8] = new Upgrade("Sniper training", "Makes blob finally do his best", 4500, false, 2);
+upgrades[9] = new Upgrade("Phobia training", "Makes blob finally do his best", 5500, false, 3);
+upgrades[10] = new Upgrade("Less hand washing", "Makes blob finally do his best", 6500, false, 3);
+upgrades[11] = new Upgrade("Daily excercise", "Makes blob finally do his best", 7000, false, 3);
+upgrades[12] = new Upgrade("Like a geriatric", "Makes blob finally do his best", 9000, false, 4);
+upgrades[13] = new Upgrade("Mobile homes", "Makes blob finally do his best", 10500, false, 4);
+upgrades[14] = new Upgrade("Free viagra", "Makes blob finally do his best", 11000, false, 4);
+
+upgrades[15] = new Upgrade("Old school cool", "Makes blob finally do his best", 12000, false, 5);
+upgrades[16] = new Upgrade("Racooning around", "Makes blob finally do his best", 15500, false, 5);
+upgrades[17] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 17000, false, 5);
+
 
 
 

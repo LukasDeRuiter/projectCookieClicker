@@ -39,7 +39,7 @@ for(let i = 0; i < units.length; i++) {
     checkIfNextUnitAvailable(i);
 }
 
-for(let i = 0; i < 9; i++) {
+for(let i = 0; i < (units.length * 3); i++) {
     setHtmlElementsForUpgrades(i);
 }
 
