@@ -1,16 +1,21 @@
 <div class="userTab" id="tab0">
-
+    <div class="userTitle"><h2>Character progress</h2></div>
     <div class="currentLevelProgress"><p id="userLevel"></p>
     <div class="levelContainer"><div class="levelBar" id="levelBarID"></div></div>
 </div>
 
 <div class="eatingOptions">
+    <div class="eatingTextContainer">
     <p id="userCookiesEaten"></p>
     <p id="userCookiesLevelCap"></p>
+
+</div>
+    <div class="cookieEatingBtnContainer">
     <button class="cookieEatingBtn" value="10">10</button>
     <button class="cookieEatingBtn" value="100">100</button>
     <button class="cookieEatingBtn" value="500">500</button>
     <button class="cookieEatingBtn" value="allCookies">All</button>
+</div>
 </div>
 
 </div>

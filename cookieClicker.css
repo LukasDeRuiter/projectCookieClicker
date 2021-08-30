@@ -545,23 +545,79 @@
     display: none;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
     overflow-x: scroll;
-    background-color: blue;
+    background-color: rgba(23, 196, 202, 0.15);
+    overflow-x: hidden;
+}
+
+.userTitle {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
 }
 .currentLevelProgress{
-    width: 15rem;
-    height: 100%;
+    width: 30rem;
+    height: 70%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 3px solid black;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cookieEatingBtnContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.cookieEatingBtn{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    width: 48%;
+    height: 48%;
+    cursor: pointer;
+    color: white;
+    transition-duration: 50ms;
+    transform: scale(1, 1);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cookieEatingBtn:hover{
+    transition-duration: 50ms;
+    transform: scale(1.2, 1.2);
 }
 
 .eatingOptions{
-    width: 15rem;
-    height: 100%;
+    width: 30rem;
+    height: 70%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.eatingTextContainer{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .levelContainer{
