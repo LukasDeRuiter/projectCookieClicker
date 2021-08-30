@@ -22,6 +22,7 @@
 
             <img class="cookie" id="clickableCookie">
             <p class="cookieNumber" id="counter">0</p>
+            <p class="errorMessage" id="errorMessage"></p>
 
 
         </div>

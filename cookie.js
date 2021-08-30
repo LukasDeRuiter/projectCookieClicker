@@ -66,7 +66,7 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
         } 
         setHtmlelements(parseInt(button.id));
     } else {
-        console.log("Not enough cookies!");
+        giveErrorMessage("Not enough cookies!");
     }
 }))
 
@@ -139,6 +139,13 @@ function checkIfNextUnitAvailable(unitValue) {
         let nextUnit = unitValue + 1;
         document.getElementById(`unitCard${nextUnit}`).style.display = "grid";
     }
+}
+
+//error Message
+function giveErrorMessage(stringText) {
+    document.getElementById("errorMessage").innerHTML = stringText;
+    setTimeout(function() {
+        document.getElementById("errorMessage").innerHTML = ""}, 3000);
 }
 
 //Random events

@@ -173,6 +173,10 @@
     z-index: 2;
 }
 
+.errorMessage{
+    color: red;
+}
+
 /* Main page: units */
 
 .singleUnitCard{
@@ -434,7 +438,6 @@
     width: 82rem;
     background-color: rgba(20, 20, 70, 0.9);
     border-radius: 5px;
-
 }
 
 /* Upgrades */
