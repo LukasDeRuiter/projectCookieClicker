@@ -32,6 +32,12 @@ class User {
         this.level += 1;
         this.cookieLevelCap = Math.ceil(this.cookieLevelCap * 1.5);
         this.updateUserUI();
+        let levelUpPopup = document.getElementById("levelUpContainer");
+        levelUpPopup.style.display = "flex";
+        levelUpPopup.style.animation = "levelUp 6s 1";
+        levelUpPopup.onanimationend = function endLevelup() {
+            levelUpPopup.style.display = "none";
+        }
     }
 
     checkIfLevelUp() {

@@ -81,6 +81,7 @@
         <?php } ?>
         
         </div>
+        <?php include('templates/levelUp.php');?>
         <?php include('templates/saveGame.php');?>
 
 <?php include('templates/footer.php'); ?>
