@@ -23,7 +23,7 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     counter.updateCounter();
     clickOnCookie.play();
     let randomChance = Math.floor(Math.random() * 100);
-    console.log(randomChance);
+    console.log(units.length);
     if(randomCookie.getCookieActive()) {
         randomCookie.disappearOnAllElements();
     }
