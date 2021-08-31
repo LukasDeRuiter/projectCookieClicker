@@ -672,10 +672,8 @@
 .devotionTab{
     display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
     width: 100%;
+    height: 100%;
     overflow-y: scroll;
     background-color: rgba(255, 255, 255, 0.15);
     overflow-x: hidden;
@@ -690,12 +688,16 @@
 .devotionOptions{
     display: flex;
     flex-direction: row;
-    width: 61rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .devotionContainer{
-    width: 15rem;
+    width: 20rem;
+    height: 16rem;
     text-align: center;
+    justify-content: center;
     align-items: center;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -704,29 +706,62 @@
 .seraphielTab{
     background-color: rgba(255, 255, 255, 0.3);
     border: 0.2rem solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 2rem #ffffff99;
     border-radius: 10px;
+    transition-duration: 50ms;
+}
+
+.seraphielTab:hover{
+    transition-duration: 50ms;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.9), 0 0 4rem rgba(255, 255, 255, 0.6);
 }
 
 .molochTab{
+    transition-duration: 50ms;
     background-color: rgba(204, 24, 24, 0.3);
     border: 0.2rem solid rgba(204, 24, 24, 0.6);
     box-shadow: 0 0 2rem rgba(204, 24, 24, 0.6);
     border-radius: 10px;
 }
 
+.molochTab:hover{
+    transition-duration: 50ms;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 2rem rgba(204, 24, 24, 0.9), 0 0 4rem rgba(204, 24, 24, 0.6);
+}
+
 .cernunnosTab{
+    transition-duration: 50ms;
     background-color: rgba(24, 204, 54, 0.3);
     border: 0.2rem solid rgba(24, 204, 54, 0.6);
     box-shadow: 0 0 2rem rgba(24, 204, 54, 0.6);
     border-radius: 10px;
 }
 
+.cernunnosTab:hover{
+    transition-duration: 50ms;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 2rem rgba(24, 204, 54, 0.9), 0 0 4rem rgba(24, 204, 54, 0.6);
+}
+
 .greatmonadTab{
+    transition-duration: 50ms;
     background-color: rgba(0, 0, 0, 0.3);
     border: 0.2rem solid rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+}
+
+.greatmonadTab:hover{
+    transition-duration: 50ms;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.9), 0 0 4rem rgba(0, 0, 0, 0.6);
+}
+
+.devotionPic{
+    width: 6rem;
+    height: 6rem;
 }
 
 

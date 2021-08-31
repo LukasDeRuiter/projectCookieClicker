@@ -62,24 +62,28 @@
     <div class="devotionOptions">
     <div class="devotionContainer seraphielTab">
         <h4 class="devotionTitle">Seraphiel</h4>
+        <img class="devotionPic" src="assets/devotionPictures/seraphiel.png">
         <p class="devotionDescription">Offer 100.000 cookies to start the path to salvation</p>
         <button class="devotionBtn">Select</button>
     </div>
 
     <div class="devotionContainer molochTab">
         <h4 class="devotionTitle">Moloch</h4>
+        <img class="devotionPic" src="assets/devotionPictures/moloch.png">
         <p class="devotionDescription">Sacrifice 1000 followers to start the path to supremacy</p>
         <button class="devotionBtn">Select</button>
     </div>
 
     <div class="devotionContainer cernunnosTab">
         <h4 class="devotionTitle">Cernunnos</h4>
+        <img class="devotionPic" src="assets/devotionPictures/cernunnos.png">
         <p class="devotionDescription">Purchase 200 acres of forest to start the path of regrowth</p>
         <button class="devotionBtn">Select</button>
     </div>
 
     <div class="devotionContainer greatmonadTab">
         <h4 class="devotionTitle">G̶̡̛̼͇̼̮̜̈̀̃̊͛́̾͌͆̍̀͊͘͜r̸̡͙͉̞͈̞̝͎͚͔͙̻̤̖͖͚̋̾̑̾̎͊̋̃͒̂́̉͐̃͛̃͜͝͠ë̵̗̼̻̙̩͓̦͎̰̘̙̞̓̓́͂̽̀̀̈́͐̉̽̚͝ạ̷̗̮̦͍̼̘̩̦̪͌t̷̨̨̟̥̼̝̠̬͔͔̞̦̖͙̹͓̘́̿̾̈̄̀́̉̐̅͆̿̇̾̔̕͠ͅ ̶̡̨̧̢̢͚̼̼̹͓͉̗̮̤̟̬͐̆̓̈́͊͂̒Ḿ̶̧̯̙̬̭̜̝͈͔̑̃̾̀͛͋̂ͅo̴̧̡̰͎͈͉̝̺̹͐ͅn̵̛̛̛͔̍͋͂́̊̾̄̄͘ą̵͈̖̤̝̳̳̜̭͍͚̗̜̹͈͖̝͈̥̂̾̓̃̑̌͐̀̆͂d̵͈͎̊̅͆͛̆̎̄̔̍́̿̅</h4>
+        <img class="devotionPic" src="assets/devotionPictures/greatmonad.png">
         <p class="devotionDescription">C̵̫̟̯̮̼̟͚̩̫̠̦̥͍̀͋̈́̎͌̅̅̆̑͂͛̓͘͝͝͠ͅo̸̳̜͇͙̺̰̠̗͓̓̿́͒̍͌̀̓͌͗ͅl̴͎͎͚̳̚ĺ̴̨̧̥͍̜̲̖̺̬̖͇͖͔̦͓̭̀̑͋̽͂̇͋̓͝e̷̬̲̦͌̌͛̓͛̎̌́͊̃͋̀̈́̌̋c̷̢̧̳̥̣̠͎̦͉̀͆́̄̃͂̉͋̄͗͘͠t̵̺̜͕̙̼͖͖͍̗͆̅ ̴̭͋͒͊̉̔̈́͗͐́̇̀̀́̈́̓̈͐̇7̶̧̡̛̜͓͖̩̖̫̭̰͓͓̈́̌́̈̅̇̒̈́̚̚̕͜ͅ ̶̨̭͍̼̱̫͉̿̒͊̂͗̎́͌̃̏͘͘͠c̷̛̈́̒̄̊̈́͋̔̌̈́́̃́̚͜o̶̧̠̥͙͖̝̠͉̾̌̊ͅo̵̢̫̟͙̬̹̪̞͇̯̬̙̩̭̔͌̎̃̈́̈̂́̃̈́́̒͊͝͝͝k̴̨̢̢̖͍͖̟̉̌̆̽͌͂̈́̅̾̿͘͠i̶̹̮̗͓͇̭̳̲̭̙̖͇͔̭̬͈̬̹̋͊ͅę̴̛̛͈̦̪͉̲̲͔̲̺̘͖̥̼̦̹̹͑͆́̉̄͗̀̈́͠ś̷̢͖̲̥̜̒̃̋͋̓̌̓̍̉̔́̑͝͝ ̵̢̫̟̤̞̲̟̝̃̍̉͌̾́̂̉̒̇̀̊͘̕̕͝ơ̷̧̖̥͎͙͇̣̖̰͑̉̈́͑̚f̷̲̠̰͚̞̉͒͆́̀͐͑̽̓̎͘̕ ̵̡͎̹͍͇̭̩͕̖̣̬̱̰͚͙̫̠̇͌̀̈́̑̊̿͌̏͂͌́̈͐̔̍̈͘͝ͅì̶̡̛̟̭̹̟̰͈̙̗̜̹̰͉̈̈͊̒́͒̈́̉̄n̴̛̛͇͂́́̆̿͌͛̍̂̏̓̀s̶̨̨̨̭̞̤̱̭̥͓̉̐̾͑͗́͛͂́ỉ̶̡̢̜̠̪̲͉̪̤̬̯͎̙͈̠͙̖̜́̈̐͌͐̀̊̑̃̏̓̋̿ͅģ̷̛̠͎̈̉́̈́̏̈͐̾̇͂̉̑͑̚̚ḫ̶̨̬͚̘̭̝͙̪̬͉̜̼̩̼̲͇̄̋̄̐̈́̎̓͒͋̈́́́̓͐͐̒͆̊ţ̶̯̤̯̣͉̼̯͉͉͍̻̯͖͇́́̈́̕̚ ̵̢̢̻̦̖̻̲́͐͆̅̾̓̾̈́̅͐̃̊͒͂̒̚ṫ̵̢͙͕̔̇̃̈̈́͘̕o̸̡̢̦͔̩̘̺̯͉̯͂͋̊̀͒̓̏̈̐̊́͂̒͒̈́̚͝͝ ̵̢̤̠̤͇̦̫͚͍̬̳̹̤̻͖̜̱̭̣̀͛̈̉̽͗́̒̉̓̉̈́̾̄̿́͘s̷̛̛̝̣̞͎̤͕̭̝͈͕̗̪͇͇̼͍̅̑͗̀̾̃̓͜͝ṯ̵̯̿̎̍͌̃̒̑̂̆͊̓̚͝͠ä̷̡̲̻̩̺͇̞̂̑͆̀͜r̶̟̠̜̓̀̅̆̄̿̽̋̌͗̊̀̄̌͝t̵͉͓̻̀̒͋̌̃̇̊̽͛͆͛͘͝͝ ̵̨̛͖̙̰̖̯̗̬̠͇͗̊̉͂̃̓͛̋̿̾̐̏̋̇͂̕͝t̸̡̘̤̏͐̎͂̎̋͐͐̍͒͗̊͒h̵̢̡̜̮̳̠̤͗͐̀͂͐͊̀́̋̐̀̉͋̈͘ͅe̵̡̧̛͍̮̯͇͚͔̹͖͔̟̝̰̬̪̯̞͒͋̓̿̀͒̾̀̌͝ ̵̱̼̮̭̗͖̄̽͛̋̇̈́͒̓̂̐̉́̄̚͠p̷̛͙̫͎̖̥̰̙̼̼̩̹͇̙̀̽͒̈́͛̃̽̒͗̈́͊̎̋̍̃ͅä̸̡͍͉̻̞͓͇̬͎̝̘̺͍̻̤́͘t̶̝̃ͅh̴̡̻̲̰͚́́͊̎̈́̍͗̚ ̵̨̡̠͈̘̜̝̻͖̯̳̹̙̓͠t̸̛̥̹̮͚̤̯̠̳̱̂̔ỏ̴̦͍̘̟̖͊̂̊̃̈́͐͗̔͆͛̄̐̕͘͝͝ ̵̢̧̢̛͍̺̗͙̺̱̬̰̠́̍̊̅͆̔̂͂̋̍̍̃̆̆̓̔̏͠ͅḁ̴̛͙̹̐̔̈́͑̋̎͘p̷̛̰̹̖͛̉̉̇̀ó̷̬̫͈̳̬̣̯̞̹̺̯̭̩̓͊̔̆̈́̀͋̅̊̌͑́͗́̔̀͐͝t̶̨̢̩̮̻̳̣̰̺͈̥̾̉̋́̽̃͌̆̈́͘͘͘h̷̳̰͛̔͋̈́́̈́̄̊̾͑͌͘ë̸͔̝̭͉̝̜͚̲̠́̈͗́̇͑̊͑̇̃̚̕o̸̭̤̼̳̘̹̼̞͔̲̝̱̦̱̮̰͙̊̇̽̈ͅs̸̺̳̰͚̺̊͊̽̚ì̶̢͎͕̫͎̳̥̬̩̼͚͍̔̓̇͝ͅs̵͓̯̋̎̋̅̍̓̕͝</p>
         <button class="devotionBtn">Ş̶̠̗͈͕͇̼̗͇͈͍͈̣̓̌̑̄ê̶͚͇͖̞̘̯̩̦̹͖̈́̈́̋̋̋̃̃̆͌̔̄̚ͅl̴͚̪̹̬̤̦̦̪͓̩̪͖̪͈̠̄̈͐̚͠ͅȅ̵̛̱̥͇̘͓͔̟̹̜̖̙͇̳̮̄͑̑̈́̃̓̒̌́̍͗̐̇͜͜͜͠c̷̢̖̖̟͉̬̭͖̗̉͑̂̔̋̇̌̌͌̽́̏́̇́̕͝t̷̢̢͖̰̹͈͉̬̘̞̙̙̥͍̙͙͙͗͗̍͜</button>
     </div>
