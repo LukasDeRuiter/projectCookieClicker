@@ -668,7 +668,7 @@
 }
 
 
-/* Devotion */
+/* Main page: Devotion */
 .devotionTab{
     display: none;
     flex-direction: column;
@@ -762,6 +762,27 @@
 .devotionPic{
     width: 6rem;
     height: 6rem;
+}
+
+/* Main page: land */
+
+.landTab{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgba(23, 196, 202, 0.15);
+    overflow-x: hidden;
+}
+
+.landContainer{
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid black;
 }
 
 

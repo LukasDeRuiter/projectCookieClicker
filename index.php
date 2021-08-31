@@ -10,7 +10,9 @@
     <div class="cookiePopupContainer">
     <?php for($i = 0; $i < $amountOfUnits; $i++) { ?>
         <?php $popupName = "unitPopup" . $i ?>
-        <div class="cookiePopup" id="<?php echo $popupName ?>"></div>
+        <div class="cookiePopup" id="<?php echo $popupName ?>">
+        
+    </div>
         <?php } ?>
 
     </div>
@@ -59,7 +61,7 @@
             <div class="tabsBtn" id="tabsBtn0">Player</div>
             <div class="tabsBtn" id="tabsBtn1">Cookie</div>
             <div class="tabsBtn" id="tabsBtn2">Units</div>
-            <div class="tabsBtn" id="tabsBtn3"></div>
+            <div class="tabsBtn" id="tabsBtn3">Land</div>
             <div class="tabsBtn" id="tabsBtn4"></div>
             <div class="tabsBtn" id="tabsBtn5">Devotion</div>
             <div class="tabsBtn" id="tabsBtn6"></div>

@@ -1,3 +1,4 @@
+<!-- tab 0 -->
 <div class="userTab" id="tab0">
     <div class="userTitle"><h2>Character progress</h2></div>
     <div class="currentLevelProgress"><p id="userLevel"></p>
@@ -20,6 +21,7 @@
 
 </div>
 
+<!-- tab 1 -->
 
 <div class="cookieTab" id="tab1">
 
@@ -31,10 +33,9 @@
 </div>
 
 
-
-
 </div>
 
+<!-- tab 2 -->
 
 <div class="unitsTab" id="tab2">
     <?php for($i = 0; $i < ($amountOfUnits * 3); $i++) { ?>
@@ -52,9 +53,21 @@
 
 </div>
 
-<div id="tab3"></div>
+<!-- tab 3 -->
+
+<div class="landTab" id="tab3">
+
+<?php for($i = 0; $i < $amountOfUnits; $i++) { ?>
+
+    <div class="landContainer" id="<?php echo "landForUnit" . $i ?>"></div>
+
+    <?php } ?>
+
+</div>
+
 <div id="tab4"></div>
 
+<!-- tab 5 -->
 
 <div class="devotionTab" id="tab5">
     <h2 class="devotionHeader">Choose your devotion</h2>
