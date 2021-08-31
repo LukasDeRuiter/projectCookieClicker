@@ -54,7 +54,37 @@
 
 <div id="tab3"></div>
 <div id="tab4"></div>
-<div id="tab5"></div>
+
+
+<div class="devotionTab" id="tab5">
+    <h2>Choose your devotion</h2>
+    <div class="devotionTab serapielTab">
+        <h4 class="devotionTitle">Seraphiel</h4>
+        <p class="devotionDescription">Offer 100.000 cookies to start the path to salvation</p>
+        <button class="devotionBtn">Select</button>
+    </div>
+
+    <div class="devotionTab molochTab">
+        <h4 class="devotionTitle">Moloch</h4>
+        <p class="devotionDescription">Sacrifice 1000 followers to start the path to supremacy</p>
+        <button class="devotionBtn">Select</button>
+    </div>
+
+    <div class="devotionTab cernunnosTab">
+        <h4 class="devotionTitle">Cernunnos</h4>
+        <p class="devotionDescription">Purchase 200 acres of forest to start the path of regrowth</p>
+        <button class="devotionBtn">Select</button>
+    </div>
+
+    <div class="devotionTab greatmonadTab">
+        <h4 class="devotionTitle">Great Monad</h4>
+        <p class="devotionDescription">Collect 7 cookies of insight to start the path to apotheosis</p>
+        <button class="devotionBtn">Select</button>
+    </div>
+    
+</div>
+
+
 <div id="tab6"></div>
 <div id="tab7"></div>
 <div id="tab8"></div>

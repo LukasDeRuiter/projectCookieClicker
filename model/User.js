@@ -34,8 +34,8 @@ class User {
         this.updateUserUI();
 
         document.getElementById("levelText1").innerHTML = `New level: ${this.level}!`
-        document.getElementById("levelText2").innerHTML = `Cookies neede for next level: ${this.cookieLevelCap}!`
-        
+        document.getElementById("levelText2").innerHTML = `Cookies needed for next level: ${this.cookieLevelCap}!`
+
         let levelUpPopup = document.getElementById("levelUpContainer");
         levelUpPopup.style.display = "flex";
         levelUpPopup.style.animation = "levelUp 6s 1";
