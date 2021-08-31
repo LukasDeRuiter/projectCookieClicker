@@ -552,7 +552,7 @@
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    overflow-x: scroll;
+    overflow-y: scroll;
     background-color: rgba(23, 196, 202, 0.15);
     overflow-x: hidden;
 }
@@ -665,6 +665,68 @@
     40% {transform: translate(-50%, -50%); opacity: 1}
     60% {transform: translate(-50%, -50%); opacity: 1}
     100% {transform: translate(-50%, 130%); opacity: 0}
+}
+
+
+/* Devotion */
+.devotionTab{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.15);
+    overflow-x: hidden;
+}
+
+.devotionHeader{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+}
+
+.devotionOptions{
+    display: flex;
+    flex-direction: row;
+    width: 61rem;
+}
+
+.devotionContainer{
+    width: 15rem;
+    text-align: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.seraphielTab{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0.2rem solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.molochTab{
+    background-color: rgba(204, 24, 24, 0.3);
+    border: 0.2rem solid rgba(204, 24, 24, 0.6);
+    box-shadow: 0 0 2rem rgba(204, 24, 24, 0.6);
+    border-radius: 10px;
+}
+
+.cernunnosTab{
+    background-color: rgba(24, 204, 54, 0.3);
+    border: 0.2rem solid rgba(24, 204, 54, 0.6);
+    box-shadow: 0 0 2rem rgba(24, 204, 54, 0.6);
+    border-radius: 10px;
+}
+
+.greatmonadTab{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.2rem solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
 
 
