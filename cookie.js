@@ -1,7 +1,7 @@
 // Setup of the unitcards and the cookie
 let number = 2;
 
-user = new User(1, 0, 100);
+user = new User(1, 0, 100, "none", 0, 0, 0, 0);
 counter = new Counter(counterCookies);
 cookie = new Cookie(1, 1);
 randomCookie = new RandomCookie(500);
