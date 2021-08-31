@@ -769,20 +769,60 @@
 .landTab{
     display: none;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    overflow-x: scroll;
     background-color: rgba(23, 196, 202, 0.15);
-    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
 }
 
+
+
 .landContainer{
-    width: 5rem;
-    height: 5rem;
+    height: 10rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255 , 255, 0.4);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border: 2px solid rgba(255, 255, 255 0.8);
+    border-radius: 8px;
+}
+
+.landContainer2{
+    display: flex;
+    flex-direction: row;
+}
+
+.landTile{
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: auto;
     border: 2px solid black;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.landName{
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+}
+
+.landBenefit{
+    margin-right: 2rem;
+}
+
+.purchaseLandBtn{
+    width: 90%;
+    height: 2rem;
+    margin-top: auto;
+
 }
 
 
