@@ -70,6 +70,14 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
     }
 }))
 
+let landButtons = document.getElementsByClassName("purchaseLandBtn");
+
+Array.from(landButtons).forEach(landButton => landButton.addEventListener('click', function() {
+    let chosenUnit = parseInt(landButton.id.replace("landCost", ""));
+    console.log(chosenUnit);
+    units[chosenUnit].homeland.buyLand(chosenUnit);
+}))
+
 //Buying upgrades
 let upgradeButtons = document.getElementsByClassName("upgradeBtn");
 

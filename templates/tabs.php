@@ -65,7 +65,7 @@
     <p class="landBenefit"  id="<?php echo "landBenefit" . $i ?>"></p>
     <img class="landTile" src="assets/landAssets/landTile1.svg">
 </div>
-    <button class="purchaseLandBtn" id="<?php echo "landCost" . $i ?>"></button>
+    <button class="purchaseLandBtn" id="<?php echo "landCost" . $i ?>" value="<?php echo $i ?>"></button>
 </div>
 
     <?php } ?>
