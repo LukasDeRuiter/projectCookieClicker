@@ -1,7 +1,7 @@
 class Unit {
 
     //Constructor
-    constructor(name, cookies, cost, amount, intervalTime) {
+    constructor(name, cookies, cost, amount, intervalTime, homeland) {
         this.name = name;
         this.cookies = cookies;
         this.cost = cost;
@@ -9,6 +9,7 @@ class Unit {
         this.intervalTime = intervalTime;
         this.multiplyer = 1;
         this.costMultiplyer = 1.25;
+        this.homeland = homeland;
     }
 
     //Getters and Setters

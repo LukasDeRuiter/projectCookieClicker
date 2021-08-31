@@ -60,12 +60,12 @@
 <?php for($i = 0; $i < $amountOfUnits; $i++) { ?>
 
     <div class="landContainer" id="<?php echo "landForUnit" . $i ?>">
-    <p class="landName">Land</p>
+    <p class="landName" id="<?php echo "landName" . $i ?>"></p>
     <div class="landContainer2">
-    <p class="landBenefit">benefits: </p>
+    <p class="landBenefit"  id="<?php echo "landBenefit" . $i ?>"></p>
     <img class="landTile" src="assets/landAssets/landTile1.svg">
 </div>
-    <button class="purchaseLandBtn" value="<?php echo $i ?>"></button>
+    <button class="purchaseLandBtn" id="<?php echo "landCost" . $i ?>"></button>
 </div>
 
     <?php } ?>
