@@ -6,6 +6,7 @@
     <?php include('unitConfig.php');?>
     <script src="model/Counter.js"></script>
     <script src="model/Cookie.js"></script>
+    <script src="model/Land.js"></script>
     <script src="model/Unit.js"></script>
     <script src="model/Upgrade.js"></script>
     <script src="model/User.js"></script>

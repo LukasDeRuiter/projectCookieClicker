@@ -127,6 +127,7 @@ Array.from(tabsButtons).forEach(tabButton => tabButton.addEventListener('click',
 
 function sethtmlElementsAtStart(unitValue){
     document.getElementById(`unitName${unitValue}`).innerHTML = units[unitValue].getName();
+    units[unitValue].homeland.setLandElements(unitValue);
     setHtmlelements(unitValue);
 }
 

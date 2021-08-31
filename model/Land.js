@@ -13,9 +13,10 @@ class Land {
 
     //Methods
     setLandElements(unitNumber) {
-        document.getElementById("landName").innerHTML = this.name;
-        document.getElementById("landBenefit").innerHTML = `unlocks ${units[unitNumber].getName()}`;
-        document.getElementById("landCost").innerHTML = `Cost: ${this.cost}`;
-        document.getElementById("landCost").value = this.cost;
+        console.log(unitNumber);
+        document.getElementById(`landName${unitNumber}`).innerHTML = this.name;
+        document.getElementById(`landBenefit${unitNumber}`).innerHTML = `unlocks ${units[unitNumber].getName()}`;
+        document.getElementById(`landCost${unitNumber}`).innerHTML = `Cost: ${this.cost}`;
+        document.getElementById(`landCost${unitNumber}`).value = this.cost;
     }
 }

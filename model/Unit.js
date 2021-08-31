@@ -1,7 +1,7 @@
 class Unit {
 
     //Constructor
-    constructor(name, cookies, cost, amount, intervalTime, homeland) {
+    constructor(name, cookies, cost, amount, intervalTime, landName, landCost, landSvgNumber, landIsBought) {
         this.name = name;
         this.cookies = cookies;
         this.cost = cost;
@@ -9,7 +9,7 @@ class Unit {
         this.intervalTime = intervalTime;
         this.multiplyer = 1;
         this.costMultiplyer = 1.25;
-        this.homeland = homeland;
+        this.homeland = new Land(landName, landCost, landSvgNumber, landIsBought);
     }
 
     //Getters and Setters
@@ -35,6 +35,10 @@ class Unit {
 
     getMultiplyer() {
         return this.multiplyer;
+    }
+
+    getHomeland() {
+        return this.homeland;
     }
 
     setMultiplyer(extraAmount) {
