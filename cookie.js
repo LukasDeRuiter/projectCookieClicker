@@ -99,6 +99,14 @@ Array.from(eatingButtons).forEach(eatingButton =>eatingButton.addEventListener('
     }
 }))
 
+
+//devotion
+let devotionButtons = document.getElementsByClassName("devotionBtn");
+
+Array.from(devotionButtons).forEach(devotionButton => devotionButton.addEventListener('click', function() {
+    user.pickDevotion(devotionButton.value);
+}))
+
 //Swapping tabs
 let tabsButtons = document.getElementsByClassName("tabsBtn");
 
