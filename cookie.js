@@ -122,6 +122,7 @@ document.getElementById("offerCookies").addEventListener('click', function() {
 
 document.getElementById("sacrificeUnits").addEventListener('click', function() {
     sacrificeUnit(1);
+    counter.makeCurrencyAppear("sacrifice", user.getOfferedUnits());
 })
 
 function offerCookies(amountOfCookies) {

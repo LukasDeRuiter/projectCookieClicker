@@ -30,6 +30,11 @@
         <p class="currencyNumber" id="landCounter"></p>
     </div>
 
+    <div class="currencyContainer" id="sacrificeCurrencyContainer">
+        <img src="assets/sacrificeIcon.svg" class="currencyImg">
+        <p class="currencyNumber" id="sacrificeCounter"></p>
+    </div>
+
 
 
     </div>

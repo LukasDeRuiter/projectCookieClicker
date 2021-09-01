@@ -45,6 +45,7 @@ class User {
 
     setOfferedUnits(offeredUnits) {
         this.offeredUnits = offeredUnits;
+        document.getElementById("sacrificeCounter").innerHTML = this.offeredUnits;
     }
 
     setOfferedCookies(offeredCookies) {
