@@ -81,10 +81,20 @@ Array.from(landButtons).forEach(landButton => landButton.addEventListener('click
 //Buying upgrades
 let upgradeButtons = document.getElementsByClassName("upgradeBtn");
 
+const upgradeAudio = [];
+
+upgradeAudio[0] = new Audio();
+upgradeAudio[0].src = "assets/sound/upgradeSound1.mp3";
+upgradeAudio[1] = new Audio();
+upgradeAudio[1].src = "assets/sound/upgradeSound2.mp3";
+
 Array.from(upgradeButtons).forEach(upgradeButton => upgradeButton.addEventListener('click', function() {
     let removeStringId = upgradeButton.id.replace("upgradeBtn", "");
     let upgradeUnit = parseInt(removeStringId);
     upgrades[upgradeUnit].buyUpgrade();
+
+    let chosenUpgradeSound = Math.floor(Math.random() * upgradeAudio.length);
+    upgradeAudio[chosenUpgradeSound].play();
 }))
 
 //Buying cookie specific upgrades
