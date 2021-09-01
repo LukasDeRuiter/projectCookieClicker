@@ -73,4 +73,8 @@ class Unit {
         }
         }
     }
+
+    killUnit(amountKilled) {
+        this.amount -= amountKilled;
+    }
 }

@@ -118,7 +118,11 @@ document.getElementById("offerCookies").addEventListener('click', function() {
     offerCookies(100);
 });
 
-function offerCookies(amountOfCookies){
+document.getElementById("sacrificeUnits").addEventListener('click', function() {
+    sacrificeUnit(1);
+})
+
+function offerCookies(amountOfCookies) {
     if(counter.getCookies() >= amountOfCookies) {
         user.setOfferedCookies(user.getOfferedCookies() + amountOfCookies);
         counter.setCookies(counter.getCookies() - amountOfCookies);
@@ -126,6 +130,32 @@ function offerCookies(amountOfCookies){
     } else {
         giveErrorMessage("Not enough Cookies!");
     }
+}
+
+function sacrificeUnit(amountOfUnits) {
+
+    let notEnoughUnits = true;
+    for(let i = 0; i < units.length; i++) {
+        if(units[i].getAmount() >= amountOfUnits) {
+            let randomUnitChosen = Math.floor(Math.random() * units.length);
+
+            while(units[randomUnitChosen].getAmount() < amountOfUnits) {
+                randomUnitChosen = Math.floor(Math.random() * units.length);
+            }
+
+            units[randomUnitChosen].killUnit(amountOfUnits);
+            setHtmlelements(randomUnitChosen);
+            user.setOfferedUnits(user.getOfferedUnits() + amountOfUnits);
+            giveErrorMessage(`Sacrificed a ${units[randomUnitChosen].getName()}!`);
+            notEnoughUnits = false;
+            break;
+        } 
+    }
+
+    if(notEnoughUnits) {
+        giveErrorMessage("Not enough units to sacrifice!");
+    }
+
 }
 //Swapping tabs
 let tabsButtons = document.getElementsByClassName("tabsBtn");
