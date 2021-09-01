@@ -72,7 +72,24 @@
 
 </div>
 
-<div id="tab4"></div>
+<!-- tab 4 -->
+
+<div class="actionsTab" id="tab4">
+
+
+        <div class="actionsContainer" id="">
+            <h3 class="actionsName" id="">Offer cookies</h3>
+            <p class="actionsDescription" id="">Increases devotion status</p>
+            <button class="actionsBtn" id="">Offer 100 cookies</button>
+        </div>
+
+        <div class="actionsContainer" id="">
+            <h3 class="actionsName" id="">Sacrifice Unit</h3>
+            <p class="actionsDescription" id="">Increases devotion status</p>
+            <button class="actionsBtn" id="">Sacrifice 1 unit</button>
+        </div>
+
+</div>
 
 <!-- tab 5 -->
 

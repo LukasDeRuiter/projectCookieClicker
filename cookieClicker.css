@@ -825,6 +825,49 @@
 
 }
 
+/* Actions */
+
+.actionsTab{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.actionsContainer{
+    height: 10rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255 , 255, 0.4);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border: 2px solid rgba(255, 255, 255 0.8);
+    border-radius: 8px;
+}
+
+.actionsName{
+    width: 12rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.actionsDescription{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.actionsBtn{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0.2rem;
+}
+
 
 html{
     background-color: gray;

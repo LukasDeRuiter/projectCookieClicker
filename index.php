@@ -60,7 +60,7 @@
             <div class="tabsBtn" id="tabsBtn1">Cookie</div>
             <div class="tabsBtn" id="tabsBtn2">Units</div>
             <div class="tabsBtn" id="tabsBtn3">Land</div>
-            <div class="tabsBtn" id="tabsBtn4"></div>
+            <div class="tabsBtn" id="tabsBtn4">actions</div>
             <div class="tabsBtn" id="tabsBtn5">Devotion</div>
             <div class="tabsBtn" id="tabsBtn6"></div>
             <div class="tabsBtn" id="tabsBtn7"></div>
