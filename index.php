@@ -27,7 +27,7 @@
 
         </div>
         
-        <div class="unitContainer">
+        <div class="unitContainer" id="unitContainer">
             <?php $containerStrings = array("unitName", "unitPortrait", "unitCookies", "unitAmount", "unitCost")?>
             <?php for($i = 0; $i < $amountOfUnits; $i++) { 
                 $unitName = "assets/unitsvg" . $i . ".php";

@@ -27,8 +27,10 @@ class Land {
         if(counter.getCookies() >= this.cost) {
             this.isBought = true;
             document.getElementById(`unitCard${unitNumber}`).style.display = "grid";
+            document.getElementById(`unitCard${unitNumber}`).style.animation = "elementAppearing 1s 1";
             document.getElementById(`landForUnit${unitNumber}`).style.display = "none";
-        } else{
+            document.getElementById('unitContainer').scrollTo(0, 1000);
+        } else {
             giveErrorMessage("Not enough Cookies!");
         }
     }
