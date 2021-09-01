@@ -27,6 +27,7 @@ class Land {
         if(counter.getCookies() >= this.cost) {
             this.isBought = true;
             document.getElementById(`unitCard${unitNumber}`).style.display = "grid";
+            document.getElementById(`landForUnit${unitNumber}`).style.display = "none";
         } else{
             giveErrorMessage("Not enough Cookies!");
         }

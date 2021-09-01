@@ -36,7 +36,6 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
 for(let i = 0; i < units.length; i++) {
     sethtmlElementsAtStart(i);
     setInterval(`addUnitCookies(${i})`, units[i].getIntervalTime());
-    checkIfNextUnitAvailable(i);
 }
 
 for(let i = 0; i < (units.length * 3); i++) {
@@ -60,7 +59,6 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
         counter.setCookies(counter.getCookies() - costOfPurchase);
         counter.updateCounter();
         units[button.id].buyUnit(parseInt(button.innerHTML));
-        checkIfNextUnitAvailable(parseInt(button.id));
         for(let i = 0; i < parseInt(button.innerHTML); i++) {
             units[button.id].setCost();
         } 
@@ -149,13 +147,6 @@ function setHtmlElementsForUpgrades(upgradeValue) {
     document.getElementById(`upgradeName${upgradeValue}`).innerHTML = upgrades[upgradeValue].getName();
     document.getElementById(`upgradeDescription${upgradeValue}`).innerHTML = upgrades[upgradeValue].getDescription();
     document.getElementById(`upgradeBtn${upgradeValue}`).innerHTML = `Buy for ${upgrades[upgradeValue].getCost()} cookies`;
-}
-
-function checkIfNextUnitAvailable(unitValue) {
-    if(units[unitValue].getAmount() >= 5) {
-        let nextUnit = unitValue + 1;
-        document.getElementById(`unitCard${nextUnit}`).style.display = "grid";
-    }
 }
 
 //error Message
