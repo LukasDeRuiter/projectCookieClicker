@@ -12,8 +12,6 @@ user.updateUserUI();
 
 counter.updateCounter();
 
-document.getElementById(`unitCard0`).style.display = "grid";
-
 let clickOnCookie = new Audio();
 clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
 
@@ -196,9 +194,9 @@ function sethtmlElementsAtStart(unitValue){
 }
 
 function setHtmlelements(unitValue) {
-    document.getElementById(`unitCookies${unitValue}`).innerHTML = (units[unitValue].getCookies() * units[unitValue].getMultiplyer());
-    document.getElementById(`unitAmount${unitValue}`).innerHTML = units[unitValue].getAmount();
-    document.getElementById(`unitCost${unitValue}`).innerHTML = units[unitValue].getCost();
+    document.getElementById(`unitCookies${unitValue}`).innerHTML = `Cookies baked: ${(units[unitValue].getCookies() * units[unitValue].getMultiplyer())}`;
+    document.getElementById(`unitAmount${unitValue}`).innerHTML = `Amount: ${units[unitValue].getAmount()}`;
+    document.getElementById(`unitCost${unitValue}`).innerHTML = `Cost: ${units[unitValue].getCost()}`;
 }
 
 function setHtmlElementsForUpgrades(upgradeValue) {
@@ -208,7 +206,22 @@ function setHtmlElementsForUpgrades(upgradeValue) {
 }
 
 //error Message
+const errorAudio = [];
+
+errorAudio[0] = new Audio();
+errorAudio[0].src = "assets/sound/errorSound.mp3";
+errorAudio[1] = new Audio();
+errorAudio[1].src = "assets/sound/secretErrorSound.mp3";
+
 function giveErrorMessage(stringText) {
+
+    let secretErrorSound = Math.floor(Math.random() * 20);
+    if(secretErrorSound === 10) {
+        errorAudio[1].play();
+    } else {
+        errorAudio[0].play();
+    }
+
     document.getElementById("errorMessage").innerHTML = stringText;
     setTimeout(function() {
         document.getElementById("errorMessage").innerHTML = ""}, 3000);
