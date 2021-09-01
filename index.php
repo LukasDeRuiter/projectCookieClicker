@@ -18,10 +18,25 @@
     <div class="interactiveContainer">
         <div class="cookieContainer">
 
+            <div class="currencyCounter">
+                
+            <div class="currencyContainer">
+        <img src="assets/cookieAssets/cookie2.svg" class="currencyImg">
+        <p class="currencyNumber" id="counter">0</p>
+    </div>
+
+    <div class="currencyContainer">
+        <img src="assets/landAssets/cookie1.svg" class="currencyImg">
+        <p class="currencyNumber" id="landCounter"></p>
+    </div>
+
+
+
+    </div>
+
         <div class="randomCookiePopup" id="randomCookie"><img src="assets/cookieAssets/cookie1.svg"></div>
 
             <img class="cookie" id="clickableCookie">
-            <p class="cookieNumber" id="counter">0</p>
             <p class="errorMessage" id="errorMessage"></p>
 
 

@@ -35,6 +35,8 @@ class User {
         return this.offeredUnits
     }
 
+
+
     setCookieLevelCap(cookieLevelCap) {
         this.cookieLevelCap = cookieLevelCap;
     }

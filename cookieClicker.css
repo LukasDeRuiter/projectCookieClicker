@@ -157,11 +157,14 @@
     transform: skewX(25deg);
 }
 
-.cookieNumber{
-    font-size: 3rem;
-    margin: auto;
-    margin-top: 1rem;
+.currencyNumber{
+    font-size: 2rem;
     z-index: 3;
+}
+
+.currencyImg{
+    width: 2rem;
+    height: 2rem;
 }
 
 .randomCookiePopup{
@@ -171,6 +174,26 @@
     margin: 0;
     display: none;
     z-index: 2;
+}
+
+.currencyCounter{
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.currencyContainer{
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
 }
 
 .errorMessage{
