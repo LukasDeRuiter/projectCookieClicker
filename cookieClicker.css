@@ -189,7 +189,7 @@
 
 .currencyContainer{
     height: 6rem;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     text-align: center;

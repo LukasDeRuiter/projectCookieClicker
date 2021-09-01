@@ -21,6 +21,7 @@ clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(cookie.getClickPower());
     counter.updateCounter();
+    counter.makeCurrencyAppear("cookie", counter.getCookies());
     clickOnCookie.play();
     let randomChance = Math.floor(Math.random() * 100);
     console.log(units.length);
@@ -68,12 +69,13 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
     }
 }))
 
+//Buying land
 let landButtons = document.getElementsByClassName("purchaseLandBtn");
 
 Array.from(landButtons).forEach(landButton => landButton.addEventListener('click', function() {
     let chosenUnit = parseInt(landButton.id.replace("landCost", ""));
-    console.log(chosenUnit);
     units[chosenUnit].homeland.buyLand(chosenUnit);
+    counter.makeCurrencyAppear("land", user.getBoughtLand());
 }))
 
 //Buying upgrades

@@ -32,10 +32,12 @@ class User {
     }
 
     getOfferedUnits() {
-        return this.offeredUnits
+        return this.offeredUnits;
     }
 
-
+    getBoughtLand() {
+        return this.boughtLand;
+    }
 
     setCookieLevelCap(cookieLevelCap) {
         this.cookieLevelCap = cookieLevelCap;
@@ -47,6 +49,11 @@ class User {
 
     setOfferedCookies(offeredCookies) {
         this.offeredCookies = offeredCookies;
+    }
+
+    setBoughtLand(boughtLand) {
+        this.boughtLand = boughtLand;
+        document.getElementById("landCounter").innerHTML = this.boughtLand;
     }
 
     //Methods

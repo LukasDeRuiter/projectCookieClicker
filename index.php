@@ -20,13 +20,13 @@
 
             <div class="currencyCounter">
                 
-            <div class="currencyContainer">
+            <div class="currencyContainer" id="cookieCurrencyContainer">
         <img src="assets/cookieAssets/cookie2.svg" class="currencyImg">
-        <p class="currencyNumber" id="counter">0</p>
+        <p class="currencyNumber" id="counter"></p>
     </div>
 
-    <div class="currencyContainer">
-        <img src="assets/landAssets/cookie1.svg" class="currencyImg">
+    <div class="currencyContainer" id="landCurrencyContainer">
+        <img src="assets/landAssets/landTile1.svg" class="currencyImg">
         <p class="currencyNumber" id="landCounter"></p>
     </div>
 

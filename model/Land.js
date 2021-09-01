@@ -30,6 +30,7 @@ class Land {
             document.getElementById(`unitCard${unitNumber}`).style.animation = "elementAppearing 1s 1";
             document.getElementById(`landForUnit${unitNumber}`).style.display = "none";
             document.getElementById('unitContainer').scrollTo(0, 1000);
+            user.setBoughtLand(user.getBoughtLand() + 1);
         } else {
             giveErrorMessage("Not enough Cookies!");
         }

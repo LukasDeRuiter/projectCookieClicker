@@ -24,4 +24,10 @@ class Counter {
         document.getElementById("cookiesSave").value = counter.getCookies();
     }
 
+    makeCurrencyAppear(elementName, currency) {
+        if(currency >= 1) {
+            document.getElementById(`${elementName}CurrencyContainer`).style.display = "flex";
+        }
+    }
+
 }
