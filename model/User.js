@@ -50,6 +50,7 @@ class User {
 
     setOfferedCookies(offeredCookies) {
         this.offeredCookies = offeredCookies;
+        document.getElementById("offeredCookiesCounter").innerHTML = this.offeredCookies;
     }
 
     setBoughtLand(boughtLand) {

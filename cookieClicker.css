@@ -182,18 +182,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     width: 100%;
-    border: 2px solid black;
 }
 
 .currencyContainer{
-    height: 6rem;
+    height: 4rem;
     display: none;
     flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: center; 
+    border: 2px solid rgba(150, 150, 150, 0.9);
+    border-radius: 15px;
+    background-color: rgba(112, 112, 112, 0.3);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
 }
 
 .errorMessage{

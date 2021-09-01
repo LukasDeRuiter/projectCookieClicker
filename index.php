@@ -35,7 +35,10 @@
         <p class="currencyNumber" id="sacrificeCounter"></p>
     </div>
 
-
+    <div class="currencyContainer" id="offeredCookiesCurrencyContainer">
+        <img src="assets/offerCookieIcon.svg" class="currencyImg">
+        <p class="currencyNumber" id="offeredCookiesCounter"></p>
+    </div>
 
     </div>
 

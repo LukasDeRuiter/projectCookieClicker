@@ -27,6 +27,7 @@ class Counter {
     makeCurrencyAppear(elementName, currency) {
         if(currency >= 1) {
             document.getElementById(`${elementName}CurrencyContainer`).style.display = "flex";
+            document.getElementById(`${elementName}CurrencyContainer`).style.animation = "elementAppearing 1s 1";
         }
     }
 

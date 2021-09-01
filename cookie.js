@@ -118,6 +118,7 @@ Array.from(devotionButtons).forEach(devotionButton => devotionButton.addEventLis
 //Offering cookies and sacrificing units
 document.getElementById("offerCookies").addEventListener('click', function() {
     offerCookies(100);
+    counter.makeCurrencyAppear("offeredCookies", user.getOfferedCookies());
 });
 
 document.getElementById("sacrificeUnits").addEventListener('click', function() {
