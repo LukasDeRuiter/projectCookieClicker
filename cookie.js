@@ -113,6 +113,20 @@ Array.from(devotionButtons).forEach(devotionButton => devotionButton.addEventLis
     user.pickDevotion(devotionButton.value);
 }))
 
+//Offering cookies and sacrificing units
+document.getElementById("offerCookies").addEventListener('click', function() {
+    offerCookies(100);
+});
+
+function offerCookies(amountOfCookies){
+    if(counter.getCookies() >= amountOfCookies) {
+        user.setOfferedCookies(user.getOfferedCookies() + amountOfCookies);
+        counter.setCookies(counter.getCookies() - amountOfCookies);
+        counter.updateCounter();
+    } else {
+        giveErrorMessage("Not enough Cookies!");
+    }
+}
 //Swapping tabs
 let tabsButtons = document.getElementsByClassName("tabsBtn");
 

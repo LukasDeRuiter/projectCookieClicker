@@ -80,13 +80,13 @@
         <div class="actionsContainer" id="">
             <h3 class="actionsName" id="">Offer cookies</h3>
             <p class="actionsDescription" id="">Increases devotion status</p>
-            <button class="actionsBtn" id="">Offer 100 cookies</button>
+            <button class="actionsBtn" id="offerCookies">Offer 100 cookies</button>
         </div>
 
         <div class="actionsContainer" id="">
             <h3 class="actionsName" id="">Sacrifice Unit</h3>
             <p class="actionsDescription" id="">Increases devotion status</p>
-            <button class="actionsBtn" id="">Sacrifice 1 unit</button>
+            <button class="actionsBtn" id="sacrificeUnits">Sacrifice 1 unit</button>
         </div>
 
 </div>

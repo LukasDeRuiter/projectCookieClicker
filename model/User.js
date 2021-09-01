@@ -27,8 +27,16 @@ class User {
         return this.cookieLevelCap;
     }
 
+    getOfferedCookies() {
+        return this.offeredCookies;
+    }
+
     setCookieLevelCap(cookieLevelCap) {
         this.cookieLevelCap = cookieLevelCap;
+    }
+
+    setOfferedCookies(offeredCookies) {
+        this.offeredCookies = offeredCookies;
     }
 
     //Methods
