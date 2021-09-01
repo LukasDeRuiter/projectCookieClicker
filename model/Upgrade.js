@@ -70,7 +70,7 @@ class Upgrade {
 
     buyUpgrade() {
         units[this.unitNumber].setMultiplyer(1);
-        document.getElementById(`unitCookies${this.unitNumber}`).innerHTML = units[this.unitNumber].getCookies() * units[this.unitNumber].getMultiplyer();
+        document.getElementById(`unitCookies${this.unitNumber}`).innerHTML = `Cookies: ${units[this.unitNumber].getCookies() * units[this.unitNumber].getMultiplyer()}`;
         let container = document.getElementById(`upgradeContainer${this.upgradeID}`);
         container.parentNode.removeChild(container);
     }

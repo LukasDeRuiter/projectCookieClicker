@@ -194,7 +194,7 @@ function sethtmlElementsAtStart(unitValue){
 }
 
 function setHtmlelements(unitValue) {
-    document.getElementById(`unitCookies${unitValue}`).innerHTML = `Cookies baked: ${(units[unitValue].getCookies() * units[unitValue].getMultiplyer())}`;
+    document.getElementById(`unitCookies${unitValue}`).innerHTML = `Cookies: ${(units[unitValue].getCookies() * units[unitValue].getMultiplyer())}`;
     document.getElementById(`unitAmount${unitValue}`).innerHTML = `Amount: ${units[unitValue].getAmount()}`;
     document.getElementById(`unitCost${unitValue}`).innerHTML = `Cost: ${units[unitValue].getCost()}`;
 }
