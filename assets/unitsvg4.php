@@ -1,245 +1,250 @@
 <svg
-        width="100%"
-        height="100%"
-        viewBox="0 0 210 297"
-        version="1.1"
-        id="svg5"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg">
-    <defs
-            id="defs2" />
-    <g
-            id="layer1">
-        <ellipse class="ear16"
-                style="fill:#483e37;stroke:#000000;stroke-width:1.24625;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path996"
-                cx="64.333069"
-                cy="86.341751"
-                rx="18.499605"
-                ry="25.694752" />
-        <ellipse class="innerear16"
-                style="fill:#ff7f2a;stroke:#000000;stroke-width:0.786449;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path996-8-7-3"
-                cx="63.909821"
-                cy="84.225533"
-                rx="12.169226"
-                ry="15.555178" />
-        <ellipse class="ear26"
-                style="fill:#483e37;stroke:#000000;stroke-width:1.24625;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path996-8"
-                cx="140.51695"
-                cy="85.072014"
-                rx="18.499605"
-                ry="25.694752" />
-        <ellipse class="innerear26"
-                style="fill:#ff7f2a;stroke:#000000;stroke-width:0.786449;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path996-8-7"
-                cx="140.30533"
-                cy="83.590668"
-                rx="12.169226"
-                ry="15.555178" />
-        <ellipse class="leg26"
-                style="fill:#917c6f;stroke:#000000;stroke-width:1.22046;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1684-4"
-                ry="34.595768"
-                rx="15.973036"
-                cy="261.98798"
-                cx="126.54992" />
-        <ellipse class="tail16"
-                style="fill:#6c5d53;stroke:#000000;stroke-width:1.11571;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1580"
-                cx="-39.642807"
-                cy="255.93944"
-                rx="66.836411"
-                ry="9.6779566"
-                transform="matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0)" />
-        <ellipse class="leg16"
-                style="fill:#6c5d53;stroke:#000000;stroke-width:1.22046;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1684"
-                ry="34.595768"
-                rx="15.973036"
-                cy="261.98795"
-                cx="82.532555" />
-        <ellipse class="body16"
-                style="fill:#6c5d53;stroke:#000000;stroke-width:1.36278;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1248"
-                cx="103.90637"
-                cy="191.0946"
-                rx="56.744911"
-                ry="71.558449" />
-        <ellipse class="head16"
-                style="fill:#6c5d53;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path870"
-                cx="104.75285"
-                cy="112.15963"
-                rx="63.274956"
-                ry="29.203827" />
-        <ellipse class="head26"
-                style="fill:#000000;stroke:#000000;stroke-width:0.747943;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path870-2"
-                cx="103.90636"
-                cy="119.14315"
-                rx="46.259609"
-                ry="22.346333" />
-        <ellipse class="eye26"
-                style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1224-9"
-                cx="123.58721"
-                cy="108.35044"
-                rx="6.3486581"
-                ry="3.5975728" />
-        <ellipse class="eye16"
-                style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1224"
-                cx="77.876869"
-                cy="109.40852"
-                rx="6.3486581"
-                ry="3.5975728" />
-        <ellipse class="body26"
-                style="fill:#ac9d93;stroke:#000000;stroke-width:0.944002;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1248-9"
-                cx="102.21339"
-                cy="216.27763"
-                rx="43.198872"
-                ry="45.10347" />
-        <ellipse class="arm16"
-                style="fill:#6c5d53;stroke:#000000;stroke-width:1.43893;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1352-2"
-                cx="201.45572"
-                cy="125.46736"
-                rx="14.474702"
-                ry="25.829185"
-                transform="matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0)" />
-        <ellipse class="arm26"
-                style="fill:#6c5d53;stroke:#000000;stroke-width:1.43893;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1352"
-                cx="-25.49324"
-                cy="198.51805"
-                rx="14.474702"
-                ry="25.829185"
-                transform="matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0)" />
-        <rect class="mouth16"
-                style="fill:#c83737;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
-                id="rect2082"
-                width="25.394632"
-                height="1.2697315"
-                x="91.843918"
-                y="132.05208"
-                rx="26.110222"
-                ry="1.2697315" />
-        <ellipse class="nose16"
-                style="fill:#483e37;stroke:#000000;stroke-width:0.889018;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path2326"
-                cx="95.44149"
-                cy="120.6245"
-                rx="17.620113"
-                ry="5.1344199" />
-        <ellipse class="nose26"
-                style="fill:#d38d5f;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
-                id="path1920"
-                cx="92.902031"
-                cy="120.41287"
-                rx="3.5975728"
-                ry="2.7510855" />
-    </g>
+   width="200mm"
+   height="100mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1730"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="unitsvg4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1732"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72337262"
+     inkscape:cx="397.44385"
+     inkscape:cy="680.8386"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1727" />
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect class="leg14"
+       style="fill:#000080;stroke:#000000;stroke-width:1.79345;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2913-5"
+       width="22.721178"
+       height="52.858746"
+       x="112.40572"
+       y="243.87875"
+       ry="11.66319"
+       rx="4.101552" />
+    <rect class="leg24"
+       style="fill:#000080;stroke:#000000;stroke-width:1.79345;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2913"
+       width="22.721178"
+       height="52.858746"
+       x="86.584724"
+       y="243.87875"
+       ry="11.66319"
+       rx="4.101552" />
+    <rect class="arm24"
+       style="fill:#008000;stroke:#000000;stroke-width:1.79645;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2639"
+       width="61.785114"
+       height="16.977249"
+       x="-212.88425"
+       y="123.08382"
+       ry="8.0937986"
+       transform="matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0)"
+       inkscape:transform-center-x="13.13893"
+       inkscape:transform-center-y="-10.110287" />
+    <rect class="body14"
+       style="fill:#008000;stroke:#000000;stroke-width:1.46939;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2535"
+       width="53.192871"
+       height="72.068031"
+       x="84.185043"
+       y="171.81073"
+       ry="11.633025" />
+    <ellipse class="head14"
+       style="fill:#e9afaf;stroke:#000000;stroke-width:3.78893;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2119"
+       cx="108.44889"
+       cy="149.04865"
+       rx="33.670189"
+       ry="37.693588" />
+    <rect class="beard14"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:1.66619;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2223"
+       width="46.963806"
+       height="40.23399"
+       x="85.80835"
+       y="157.64409"
+       ry="19.385471" />
+    <rect class="mouth14"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2431"
+       width="24.140394"
+       height="1.4630542"
+       x="96.195816"
+       y="170.44582"
+       ry="0.73152709" />
+    <ellipse class="eye14"
+       style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2787"
+       cx="93.269707"
+       cy="141.00185"
+       rx="4.7549262"
+       ry="4.5720439" />
+    <ellipse class="eye24"
+       style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2787-7"
+       cx="119.97044"
+       cy="140.4532"
+       rx="4.7549262"
+       ry="4.5720439" />
+    <rect class="eyebrow14"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3061"
+       width="19.019705"
+       height="4.0233989"
+       x="80.467979"
+       y="128.01724"
+       rx="5.1206927"
+       ry="4.0233989" />
+    <rect class="eyebrow24"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3061-5"
+       width="19.019705"
+       height="4.0233989"
+       x="111.92364"
+       y="127.4686"
+       rx="5.1206927"
+       ry="4.0233989" />
+    <ellipse class="eyelid14"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.84556;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3291"
+       cx="93.269707"
+       cy="139.53879"
+       rx="3.0033278"
+       ry="3.1862094" />
+       <rect class="staff14"
+       style="fill:#c87137;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3187"
+       width="10.24138"
+       height="182.15025"
+       x="178.85838"
+       y="114.84976"
+       rx="5.1206927"
+       ry="4.0233865" />
+    <ellipse class="eyelid24"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.84556;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3291-4"
+       cx="121.06773"
+       cy="139.72166"
+       rx="3.0033278"
+       ry="3.1862094"
+       inkscape:transform-center-x="-12.801724"
+       inkscape:transform-center-y="-17.922414" />
+  </g>
+  <rect class="arm14"
+       style="fill:#008000;stroke:#000000;stroke-width:1.79645;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2639-5"
+       width="61.785114"
+       height="16.977249"
+       x="-262.80945"
+       y="-114.13013"
+       ry="8.0937986"
+       transform="matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0)"
+       inkscape:transform-center-x="12.102092"
+       inkscape:transform-center-y="11.330882" />
 </svg>
 
 <style>
-    .head16{
-        animation: idle16 5s infinite linear;
+    .staff14 {
+        animation: idle14 5s infinite;
     }
 
-    .head26, .eye16, .eye26, .ear16, .ear26, .innerear16 , .innerear26, .mouth16{
-        animation: idle26 5s infinite linear;
+    .arm14{
+        animation: idle24 5s infinite;
     }
 
-    .nose16, .nose26 {
-        animation: idle36 5s infinite linear;
+    .arm24{
+        animation: idle34 5s infinite;
     }
 
-    .body16, .body26 , .leg16 , .leg26 {
-        animation: idle46 5s infinite linear;
-    }
-    .arm16{
-        animation: idle56 5s infinite linear;
+    .body14, .head14, .beard14, .mouth14 , .leg14, .leg24{
+        animation: idle44 5s infinite;
     }
 
-    .arm26{
-        animation: idle66 5s infinite linear;
+    .eyebrow14, .eyebrow24{
+        animation: idle54 5s infinite;
     }
 
-    .tail16{
-        animation: idle76 5s infinite linear;
+    .eye14, .eye24, .eyelid14, .eyelid24{
+        animation: idle64 5s infinite;
     }
 
-
-    @keyframes idle16 {
-        0% {transform: translate(0rem, 0rem);}
-        20% {transform: translate(-2rem, 1rem);}
-        40% {transform: translate(-2rem, 0rem);}
-        50% {transform: translate(0rem, 0rem);}
-        60% {transform: translate(2rem, 1rem);}
-        80% {transform: translate(2rem, 0rem);}
-        100% {transform: translate(0rem, 0rem);}
+    @keyframes idle14 {
+        0% {transform: scale(1, 1);}
+        40% {transform: rotate(90deg) translate(10%, -90%)}
+        50% {transform: rotate(90deg) translate(10%, -70%)}
+        60% {transform: rotate(90deg) translate(10%, -70%)}
+        80% {transform: rotate(90deg) translate(10%, -90%)}
+        100% {transform: scale(1, 1);}
     }
 
-    @keyframes idle26 {
-        0% {transform: translate(0rem, 0rem);}
-        20% {transform: translate(-2.4rem, 1.2rem);}
-        40% {transform: translate(-2.4rem, 0rem);}
-        50% {transform: translate(0rem, 0rem);}
-        60% {transform: translate(2.4rem, 1.2rem);}
-        80% {transform: translate(2.4rem, 0rem);}
-        100% {transform: translate(0rem, 0rem);}
+    @keyframes idle24 {
+        0% {transform: scale(1, 1) matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0);}
+        40% {transform: rotate(90deg) translate(10%, -90%) matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0);}
+        50% {transform: rotate(90deg) translate(10%, -70%) matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0);}
+        60% {transform: rotate(90deg) translate(10%, -70%) matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0);}
+        80% {transform: rotate(90deg) translate(10%, -90%) matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0);}
+        100% {transform: scale(1, 1) matrix(-0.89584954,-0.44435751,0.42532721,-0.90503965,0,0);}
     }
 
-    @keyframes idle36 {
-        0% {transform: translate(0rem, 0rem);}
-        20% {transform: translate(-2.8rem, 1.2rem);}
-        40% {transform: translate(-2.8rem, 0rem);}
-        50% {transform: translate(0rem, 0rem);}
-        60% {transform: translate(3.5rem, 1.2rem);}
-        80% {transform: translate(3.5rem, 0rem);}
-        100% {transform: translate(0rem, 0rem);}
+    @keyframes idle34 {
+        0% {transform: scale(1, 1) matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0);}
+        40% {transform: rotate(1deg) translate(-20%, -10%) matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0);}
+        50% {transform: rotate(1deg) translate(-40%, -10%) matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0);}
+        60% {transform: rotate(1deg) translate(-40%, -10%) matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0);}
+        80% {transform: rotate(1deg) translate(-20%, -10%) matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0);}
+        100% {transform: scale(1, 1) matrix(0.29362571,-0.95592047,0.9619119,0.27335964,0,0);}
     }
 
-    @keyframes idle46 {
-        0% {transform: translate(0rem, 0rem);}
-        20% {transform: translate(-2rem, 1rem);}
-        40% {transform: translate(-2rem, 0rem);}
-        50% {transform: translate(0rem, 0rem);}
-        60% {transform: translate(2rem, 1rem);}
-        80% {transform: translate(2rem, 0rem);}
-        100% {transform: translate(0rem, 0rem);}
+    @keyframes idle44 {
+        0% {transform: scale(1, 1);}
+        40% {transform: translate(-30%, -10%)}
+        50% {transform: translate(-50%, -10%)}
+        60% {transform:  translate(-50%, -10%)}
+        80% {transform: translate(-30%, -10%)}
+        100% {transform: scale(1, 1);}
+    }
+    
+    @keyframes idle54 {
+        0% {transform: scale(1, 1);}
+        40% {transform: translate(-30%, -10%)}
+        50% {transform: translate(-50%, -5%)}
+        60% {transform:  translate(-50%, -10%)}
+        80% {transform: translate(-30%, -10%)}
+        100% {transform: scale(1, 1);}
     }
 
-    @keyframes idle56 {
-        0% {transform: translate(0rem, 0rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0) rotateX(0deg);;}
-        20% {transform: translate(-2rem, 1rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0) rotateX(20deg);}
-        40% {transform: translate(-2rem, 0rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0) rotateX(30deg);;}
-        50% {transform: translate(0rem, 0rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0)  rotateX(40deg);;}
-        60% {transform: translate(2rem, 1rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0) rotateX(30deg);;}
-        80% {transform: translate(2rem, 0rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0) rotateX(20deg);;}
-        100% {transform: translate(0rem, 0rem) matrix(0.9296781,0.36837295,-0.39519351,0.91859789,0,0) rotateX(0deg);;}
+    @keyframes idle64 {
+        0% {transform: scale(1, 1);}
+        40% {transform: translate(-30%, -10%);}
+        50% {transform: translate(-50%, -8%);
+            fill: red;}
+        60% {transform:  translate(-50%, -10%);
+            fill: black;}
+        80% {transform: translate(-30%, -10%);}
+        100% {transform: scale(1, 1);}
     }
 
-    @keyframes idle66 {
-        0% {transform: translate(0rem, 0rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0)  rotateX(0deg);;}
-        20% {transform: translate(-2rem, 1rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0) rotateX(-20deg);;}
-        40% {transform: translate(-2rem, 0rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0) rotateX(-30deg);;}
-        50% {transform: translate(0rem, 0rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0) rotateX(-40deg);;}
-        60% {transform: translate(2rem, 1rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0) rotateX(-30deg);;}
-        80% {transform: translate(2rem, 0rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0) rotateX(-20deg);;}
-        100% {transform: translate(0rem, 0rem) matrix(0.87549581,-0.4832257,0.45761873,0.88914853,0,0) rotateX(0deg);;}
-    }
-
-    @keyframes idle76 {
-        0% {transform: translate(0rem, 0rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0);}
-        20% {transform: translate(-2rem, 1rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0) rotateX(20deg);}
-        40% {transform: translate(-2rem, 0rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0) rotateX(30deg);}
-        50% {transform: translate(0rem, 0rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0) rotateX(40deg);}
-        60% {transform: translate(2rem, 1rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0) rotateX(30deg);}
-        80% {transform: translate(2rem, 0rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0);}
-        100% {transform: translate(0rem, 0rem) matrix(0.73815268,-0.6746337,0.73393379,0.67922102,0,0);}
-    }
 </style>
