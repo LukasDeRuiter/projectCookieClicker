@@ -921,3 +921,21 @@ html{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+@media screen and (max-width: 480px){
+    html{
+        font-size: 20%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    html{
+        font-size: 30%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 35%;
+    }
+}
