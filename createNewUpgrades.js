@@ -28,10 +28,13 @@ upgrades[21] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his 
 upgrades[22] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 7);
 upgrades[23] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 7);
 
-upgrades[24] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 7);
-upgrades[25] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 7);
-upgrades[26] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 7);
+upgrades[24] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 8);
+upgrades[25] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 8);
+upgrades[26] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 8);
 
+upgrades[27] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 9);
+upgrades[28] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 9);
+upgrades[29] = new Upgrade("Cookie power from v1.0", "Makes blob finally do his best", 20000, false, 9);
 
 
 
