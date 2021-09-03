@@ -78,7 +78,7 @@
     width: 100rem;
     height: 48rem;
     margin: auto;
-    margin-top: 1rem;
+
 }
 
 .interactiveContainer{
@@ -91,12 +91,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 2, 255, 0.15);
+    background-image: radial-gradient(rgb(119, 58, 17), rgb(54, 54, 54));
     background-clip: padding-box;
     width: 70rem;
-    border-width: 2rem;
+    border-width: 3rem;
     border-style: solid;
-    border-image: url(assets/border.png) 33% stretch;
+    border-image: url(assets/border.png) 33% repeat;
     overflow: hidden;
 }
 
@@ -300,8 +300,8 @@
     margin: auto;
     border: 4px solid rgb(24, 117, 24);
     border-radius: 10px;
-    width: 4.2rem;
-    height: 2.8rem;
+    width: 3rem;
+    height: 2rem;
     cursor: pointer;
     color: white;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15));
@@ -907,11 +907,7 @@
 @keyframes elementAppearing {
     0% {transform: scale(0.2, 0.2);
     opacity: 0.1;}
-    20% {transform: scale(0.6, 0.6);
-        opacity: 0.7;}
-    40% {transform: scale(0.9, 0.9);
-        opacity: 1;}
-
+    40% {opacity: 1;}
     60% {transform: scale(1.2, 1.2);
     filter: brightness(200%);}
     80% {transform: scale(1, 1);
