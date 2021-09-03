@@ -9,5 +9,6 @@ units[5] = new Unit("Raccoon", 40, 500, 0 , 50000, "Raccoon home", 500, 6, false
 units[6] = new Unit("Roboboy", 45, 600, 0 , 60000, "Roboboy home", 500, 7, false);
 units[7] = new Unit("Cannister", 50, 700, 0 , 65000, "Cannister home", 500, 8, false);
 units[8] = new Unit("Rocky", 55, 800, 0 , 65000, "Rocky home", 500, 9, false);
+units[9] = new Unit("Cortman", 60, 1000, 0 , 70000, "Cortman home", 500, 10, false);
 
 let counterCookies = 0;
