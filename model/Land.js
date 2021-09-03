@@ -29,7 +29,10 @@ class Land {
             this.isBought = true;
             document.getElementById(`unitCard${unitNumber}`).style.display = "grid";
             document.getElementById(`unitCard${unitNumber}`).style.animation = "elementAppearing 1s 1";
-            document.getElementById(`landForUnit${unitNumber}`).style.display = "none";
+            document.getElementById(`landForUnit${unitNumber}`).style.animation = "elementAppearing 1s 1 reverse";
+            document.getElementById(`landForUnit${unitNumber}`).addEventListener("animationend", function() {
+                document.getElementById(`landForUnit${unitNumber}`).style.display = "none";
+            })
             document.getElementById('unitContainer').scrollTo(0, 1000);
             user.setBoughtLand(user.getBoughtLand() + 1);
         } else {
