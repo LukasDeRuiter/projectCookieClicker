@@ -21,6 +21,7 @@ class Land {
         document.getElementById(`landBenefit${unitNumber}`).innerHTML = `unlocks ${units[unitNumber].getName()}`;
         document.getElementById(`landCost${unitNumber}`).innerHTML = `Cost: ${this.cost}`;
         document.getElementById(`landCost${unitNumber}`).value = this.cost;
+        document.getElementById(`landsvg${unitNumber}`).src = `assets/landAssets/landtile${this.svgNumber}.svg`;
     }
 
     buyLand(unitNumber) {
