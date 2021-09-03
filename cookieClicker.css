@@ -91,8 +91,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 2, 255, 0.15);
+    background-clip: padding-box;
     width: 70rem;
+    border-width: 2rem;
+    border-style: solid;
+    border-image: url(assets/border.png) 33% stretch;
+    overflow: hidden;
 }
 
 .unitContainer{
