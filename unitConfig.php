@@ -1,6 +1,6 @@
 <?php
 
-$amountOfUnits = 6;
+$amountOfUnits = 9;
 
 ?>
 
