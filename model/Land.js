@@ -39,4 +39,10 @@ class Land {
             giveErrorMessage("Not enough Cookies!");
         }
     }
+
+    checkIfIsBought(unitNumber) {
+        if(this.isBought) {
+            this.buyLand(unitNumber);
+        }
+    }
 }
