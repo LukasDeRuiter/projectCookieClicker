@@ -46,6 +46,11 @@ for(let i = 0; i < (units.length * 3); i++) {
 function addUnitCookies(unitValue) {
             counter.addAmount(units[unitValue].createCookies());
             counter.updateCounter();
+            if(units[unitValue].getAmount() >= 1){
+                for(let i = 0; i < units[unitValue].getAmount(); i++) {
+                    cookie.cookieClickedAnimation();
+                }
+            }
             units[unitValue].displayAddedCookies(unitValue);
         };
 

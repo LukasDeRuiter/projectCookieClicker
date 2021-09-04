@@ -60,10 +60,9 @@ class Cookie {
         div.style.position = "absolute";
         let pickCookie = Math.floor(Math.random() * this.level) + 1;
         let pickLocation = Math.floor(Math.random() * 90) + 10;
-        div.style.width = `2rem`;
-        div.style.height = `2rem`;
+        div.style.width = `4rem`;
+        div.style.height = `4rem`;
         div.src = `assets/cookieAssets/cookie${pickCookie}.svg`;
-        div.style.zIndex = "10";
         div.style.top = `0%`;
         div.style.left = `${pickLocation}%`;
         div.style.animation = "clickCursorAnimation2 2s 1";
