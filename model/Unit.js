@@ -1,14 +1,14 @@
 class Unit {
 
     //Constructor
-    constructor(name, cookies, cost, amount, intervalTime, landName, landCost, landSvgNumber, landIsBought) {
+    constructor(name, cookies, cost, amount, intervalTime, multiplyer, costMultiplyer, landName, landCost, landSvgNumber, landIsBought) {
         this.name = name;
         this.cookies = cookies;
         this.cost = cost;
         this.amount = amount;
         this.intervalTime = intervalTime;
-        this.multiplyer = 1;
-        this.costMultiplyer = 1.25;
+        this.multiplyer = multiplyer;
+        this.costMultiplyer = costMultiplyer;
         this.homeland = new Land(landName, landCost, landSvgNumber, landIsBought);
     }
 

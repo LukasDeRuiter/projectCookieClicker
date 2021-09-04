@@ -1,9 +1,9 @@
 // Setup of the unitcards and the cookie
 let number = 2;
 
-user = new User(1, 0, 100, "none", 0, 0, 0, 0);
+user = new User(userLevel, userCookiesEaten, userCookieLevelCap, userDevotion, userOfferedCookies, userOfferedUnits, userBoughtLand, userCookiesOfInsight);
 counter = new Counter(counterCookies);
-cookie = new Cookie(1, 1);
+cookie = new Cookie(cookieCookieLevel, cookieCookieLevel);
 randomCookie = new RandomCookie(500);
 
 cookie.updateCookie();
@@ -197,6 +197,7 @@ Array.from(tabsButtons).forEach(tabButton => tabButton.addEventListener('click',
 function sethtmlElementsAtStart(unitValue){
     document.getElementById(`unitName${unitValue}`).innerHTML = units[unitValue].getName();
     units[unitValue].homeland.setLandElements(unitValue);
+    units[unitValue].homeland.checkIfIsBought(unitValue);
     setHtmlelements(unitValue);
 }
 
@@ -262,7 +263,11 @@ document.getElementById('saveBtnID').addEventListener('click', function() {
         document.getElementById(`unitNumber${i}4`).value = units[i].getIntervalTime();
         document.getElementById(`unitNumber${i}5`).value = units[i].getMultiplyer();
         document.getElementById(`unitNumber${i}6`).value = units[i].getCostMultiplyer();
-        document.getElementById(`unitNumber${i}7`).value = units[i].homeland.getIsBought();
+
+        document.getElementById(`unitNumber${i}7`).value = units[i].homeland.getName();
+        document.getElementById(`unitNumber${i}8`).value = units[i].homeland.getCost();
+        document.getElementById(`unitNumber${i}9`).value = units[i].homeland.getSvgNumber();
+        document.getElementById(`unitNumber${i}10`).value = units[i].homeland.getIsBought();
     }
 })
 

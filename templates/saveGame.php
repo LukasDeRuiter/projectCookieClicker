@@ -68,10 +68,13 @@ if(isset($_POST['submit'])) {
             $saveUnitIntervalTime = $_POST['unitNumber' . $i . '4'];
             $saveUnitMultiplyer = $_POST['unitNumber' . $i . '5'];
             $saveUnitCostMultiplyer = $_POST['unitNumber' . $i . '6'];
-            $saveUnitHomeland = $_POST['unitNumber' . $i . '7'];
-            $sql2 = "INSERT INTO unit(unitName,unitCookies,unitCost,unitAmount,intervalTime,unitMultiplyer,unitCostMultiplyer,unitHomeland,
+            $saveUnitHomelandName = $_POST['unitNumber' . $i . '7'];
+            $saveUnitHomelandCost = $_POST['unitNumber' . $i . '8'];
+            $saveUnitHomelandSvg = $_POST['unitNumber' . $i . '9'];
+            $saveUnitHomelandBought = $_POST['unitNumber' . $i . '10'];
+            $sql2 = "INSERT INTO unit(unitName,unitCookies,unitCost,unitAmount,intervalTime,unitMultiplyer,unitCostMultiplyer,unitHomelandName,unitHomelandCost,unitHomelandSvg,unitHomelandBought,
             userID) VALUES('$saveUnitName', '$saveUnitCookies', '$saveUnitCost', '$saveUnitAmount', '$saveUnitIntervalTime', '$saveUnitMultiplyer' , '$saveUnitCostMultiplyer',
-             '$saveUnitHomeland', '$newSaveID')";
+             '$saveUnitHomelandName', '$saveUnitHomelandCost', '$saveUnitHomelandSvg', '$saveUnitHomelandBought', '$newSaveID')";
          mysqli_query($connection, $sql2);
             }
 
@@ -115,7 +118,7 @@ if(isset($_POST['submit'])) {
 
     <?php $unitName = "unitNumber";
     for($i = 0; $i < $amountOfUnits; $i++) { 
-        for($j = 0; $j < 8; $j++) { ?>
+        for($j = 0; $j < 11; $j++) { ?>
             <input type="hidden" value="" name="<?php echo $unitName . $i . $j ?>" id="<?php echo $unitName . $i . $j ?>">
             <?php }
             } ?>

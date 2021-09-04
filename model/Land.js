@@ -9,8 +9,16 @@ class Land {
     }
 
     //Getters and Setters
+    getName() {
+        return this.name;
+    }
+
     getCost() {
         return this.cost;
+    }
+
+    getSvgNumber() {
+        return this.svgNumber;
     }
 
     getIsBought() {
@@ -49,7 +57,7 @@ class Land {
     }
 
     checkIfIsBought(unitNumber) {
-        if(this.isBought) {
+        if(this.isBought == 1) {
             this.buyLand(unitNumber);
         }
     }

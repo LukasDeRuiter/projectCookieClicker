@@ -98,6 +98,7 @@
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
         <script src="createSaveUnits.js"></script>
+        <script src="createNewUpgrades.js"></script>
     <?php } else { ?>
         <script src="createNewUnits.js"></script>
         <script src="createNewUpgrades.js"></script>
