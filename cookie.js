@@ -21,6 +21,7 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     counter.showAmountAdded(cookie.getClickPower());
     counter.updateCounter();
     counter.makeCurrencyAppear("cookie", counter.getCookies());
+    cookie.cookieClickedAnimation();
     clickOnCookie.play();
     let randomChance = Math.floor(Math.random() * 100);
     console.log(units.length);

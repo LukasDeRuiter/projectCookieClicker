@@ -53,4 +53,22 @@ class Cookie {
         this.updateCookie();
         this.updateUpgradeContainer();
     }
+
+    cookieClickedAnimation() {
+        let div = document.createElement("img");
+        document.getElementById("cookieContainer").append(div);
+        div.style.position = "absolute";
+        let pickCookie = Math.floor(Math.random() * this.level) + 1;
+        let pickLocation = Math.floor(Math.random() * 90) + 10;
+        div.style.width = `2rem`;
+        div.style.height = `2rem`;
+        div.src = `assets/cookieAssets/cookie${pickCookie}.svg`;
+        div.style.zIndex = "10";
+        div.style.top = `0%`;
+        div.style.left = `${pickLocation}%`;
+        div.style.animation = "clickCursorAnimation2 2s 1";
+        div.addEventListener("animationend", function() {
+            document.getElementById("cookieContainer").removeChild(div);
+        })
+    }
 }

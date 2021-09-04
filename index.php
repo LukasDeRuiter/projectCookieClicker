@@ -16,7 +16,7 @@
     </div>
 
     <div class="interactiveContainer">
-        <div class="cookieContainer">
+        <div class="cookieContainer" id="cookieContainer">
 
             <div class="currencyCounter">
                 
