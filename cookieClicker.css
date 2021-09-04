@@ -211,6 +211,11 @@
     color: red;
 }
 
+@keyframes clickCursorAnimation1 {
+    0% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(-2rem);}
+}
+
 /* Main page: units */
 
 .singleUnitCard{

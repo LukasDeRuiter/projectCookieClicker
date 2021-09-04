@@ -18,6 +18,7 @@ clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
 //functions for adding cookies
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(cookie.getClickPower());
+    counter.showAmountAdded(cookie.getClickPower());
     counter.updateCounter();
     counter.makeCurrencyAppear("cookie", counter.getCookies());
     clickOnCookie.play();
