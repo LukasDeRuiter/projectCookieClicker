@@ -12,6 +12,14 @@ class Land {
     getCost() {
         return this.cost;
     }
+
+    getIsBought() {
+        if(this.isBought) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
    
 
     //Methods

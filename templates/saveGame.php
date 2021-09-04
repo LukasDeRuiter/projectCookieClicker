@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
 
     $saveCookies = $_POST['cookiesSave'];
     $saveLevel = $_POST['levelSave'];
-    $saveEatenCookies = $_POST['cookiesEatenSave'];
+    $saveCookiesEaten = $_POST['cookiesEatenSave'];
     $saveCookieLevelCap = $_POST['cookieLevelCapSave'];
     $saveDevotion = $_POST['devotionSave'];
     $saveOfferedCookies = $_POST['offeredCookiesSave'];
@@ -51,11 +51,11 @@ if(isset($_POST['submit'])) {
 
         $saveName = mysqli_real_escape_string($connection, $_POST['name']);
         $savePassword = mysqli_real_escape_string($connection, $_POST['password']);
-        $saveCookies = mysqli_real_escape_string($connection, $_POST['cookiesSave']);
+        $saveCookies = mysqli_real_escape_string($connection, $_POST['cookiesSave']);   
 
         $sql = "INSERT INTO user(userID,userName,userPassword,userCookies,userLevel,userCookiesEaten,userCookieLevelCap, 
         userDevotion,userOfferedCookies,userOfferedUnits,userBoughtLand,userCookiesOfInsight,cookieLevel) 
-        VALUES('$newSaveID', '$saveName', '$savePassword', '$saveCookies', '$saveLevel', '$saveCookieEaten', '$saveCookieLevelCap', 
+        VALUES('$newSaveID', '$saveName', '$savePassword', '$saveCookies', '$saveLevel', '$saveCookiesEaten', '$saveCookieLevelCap', 
         '$saveDevotion', '$saveOfferedCookies', '$saveOfferedUnits', '$saveBoughtLand', '$saveCookiesOfInsight', '$saveCookieLevel')";
 
         if(mysqli_query($connection, $sql)) {

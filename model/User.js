@@ -27,6 +27,10 @@ class User {
         return this.cookieLevelCap;
     }
 
+    getDevotion() {
+        return this.devotion;
+    }
+
     getOfferedCookies() {
         return this.offeredCookies;
     }
@@ -37,6 +41,10 @@ class User {
 
     getBoughtLand() {
         return this.boughtLand;
+    }
+
+    getCookiesOfInsight() {
+        return this.cookiesOfInsight;
     }
 
     setCookieLevelCap(cookieLevelCap) {
@@ -63,6 +71,8 @@ class User {
         this.eatenCookies -= this.cookieLevelCap;
         this.level += 1;
         this.cookieLevelCap = Math.ceil(this.cookieLevelCap * 1.5);
+        document.getElementById("levelSave").value = this.level;
+        document.getElementById("cookieLevelCapSave").value = this.cookieLevelCap;
         this.updateUserUI();
 
         document.getElementById("levelText1").innerHTML = `New level: ${this.level}!`
@@ -101,6 +111,7 @@ class User {
             this.updateCookiesEaten();
             this.checkIfLevelUp();
             object.updateCounter();
+            document.getElementById("cookiesEatenSave").value = this.eatenCookies;
         }
     }
 

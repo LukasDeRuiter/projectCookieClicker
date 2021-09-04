@@ -244,6 +244,14 @@ document.getElementById("randomCookie").addEventListener('click', function() {
 // Saving statistics
 
 document.getElementById('saveBtnID').addEventListener('click', function() {
+
+    document.getElementById("devotionSave").value = user.getDevotion();
+    document.getElementById("offeredCookiesSave").value = user.getOfferedCookies();
+    document.getElementById("offeredUnitsSave").value = user.getOfferedUnits();
+    document.getElementById("boughtLandSave").value = user.getBoughtLand();
+    document.getElementById("cookiesOfInsightSave").value = user.getCookiesOfInsight();
+    document.getElementById("cookieLevelSave").value = cookie.getLevel();
+
     document.getElementById('saveContainerID').style.display = "flex";
     document.getElementById("mainContainer").style.filter = "brightness(0.5)";
     for(let i = 0; i < units.length; i++) {
@@ -254,6 +262,7 @@ document.getElementById('saveBtnID').addEventListener('click', function() {
         document.getElementById(`unitNumber${i}4`).value = units[i].getIntervalTime();
         document.getElementById(`unitNumber${i}5`).value = units[i].getMultiplyer();
         document.getElementById(`unitNumber${i}6`).value = units[i].getCostMultiplyer();
+        document.getElementById(`unitNumber${i}7`).value = units[i].homeland.getIsBought();
     }
 })
 
