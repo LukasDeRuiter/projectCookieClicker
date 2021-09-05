@@ -34,6 +34,7 @@ document.getElementById("clickableCookie").addEventListener('click', function() 
     }
 })
 
+/* Game setup at start */
 for(let i = 0; i < units.length; i++) {
     sethtmlElementsAtStart(i);
     setInterval(`addUnitCookies(${i})`, units[i].getIntervalTime());
@@ -42,6 +43,8 @@ for(let i = 0; i < units.length; i++) {
 for(let i = 0; i < (units.length * 3); i++) {
     setHtmlElementsForUpgrades(i);
 }
+
+checkCurrenciesAtStart();
 
 function addUnitCookies(unitValue) {
             counter.addAmount(units[unitValue].createCookies());
@@ -211,6 +214,19 @@ function setHtmlElementsForUpgrades(upgradeValue) {
     document.getElementById(`upgradeName${upgradeValue}`).innerHTML = upgrades[upgradeValue].getName();
     document.getElementById(`upgradeDescription${upgradeValue}`).innerHTML = upgrades[upgradeValue].getDescription();
     document.getElementById(`upgradeBtn${upgradeValue}`).innerHTML = `Buy for ${upgrades[upgradeValue].getCost()} cookies`;
+}
+
+function checkCurrenciesAtStart() {
+    document.getElementById("landCounter").innerHTML = user.boughtLand;
+    document.getElementById("offeredCookiesCounter").innerHTML = user.offeredCookies;
+    document.getElementById("sacrificeCounter").innerHTML = user.offeredUnits;
+    counter.updateCounter();
+
+    counter.makeCurrencyAppear("cookie", counter.getCookies());
+    counter.makeCurrencyAppear("land", user.getBoughtLand());
+    counter.makeCurrencyAppear("sacrifice", user.getOfferedUnits());
+    counter.makeCurrencyAppear("offeredCookies", user.getOfferedCookies());
+    
 }
 
 //error Message
