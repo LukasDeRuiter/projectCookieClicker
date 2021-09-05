@@ -1,11 +1,26 @@
+<!-- Welcome to the source code of my Cookie Clicker game!
+
+This php-doc contains the main code for setting up the containers, templates and checking is a save file is loaded through the 
+GET-superglobal. Most of the further php/html code is worked out in templates, which are placed here inside 'include' tags.
+
+The javascript part of this project is mostly written in OOP(Object oriented Programming), of which the classes as placed within the
+model directory. The main file running this code is the  'cookie.js' file, which I recommend reading after this one. 
+
+Enjoy the code, and any question are more than welcome!
+
+Kind regards,
+Lukas de Ruiter -->
 
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Header -->
 <?php include('templates/header.php'); ?>
 
+<!-- This contains the game -->
     <div class="mainContainer" id="mainContainer">
 
+<!-- Popup bar for cookies made by units -->
     <div class="cookiePopupContainer">
     <?php for($i = 0; $i < $amountOfUnits; $i++) { ?>
         <?php $popupName = "unitPopup" . $i ?>
@@ -14,6 +29,7 @@
 
     </div>
 
+<!-- Container for the clickable cookie and units-cards -->
     <div class="interactiveContainer">
         <div class="cookieContainer" id="cookieContainer">
 
@@ -76,6 +92,7 @@
         </div>
     </div>
 
+    <!-- This container holds the different tabs and buttons, please view the 'tabs.php' file for further information -->
     <div class="optionsContainer">
         <div class="tabsContainer">
             <div class="tabsBtn" id="tabsBtn0">Player</div>
@@ -94,6 +111,7 @@
         </div>
     </div>
 
+    <!-- Here the program loads scripts/files based on if a save file is being loaded. Part 1 is with a save load, part 2 is a new game-->
     <?php if(isset($_GET['id'])){
         include('loadedGame.php'); ?>
         <script src="createSaveUnits.js"></script>
@@ -104,9 +122,13 @@
         <?php } ?>
         
         </div>
+
+    <!-- Here are two files, one for the levelup Popup, which shows when leveling up, and one for the save game screen. For more information
+on this part of the code, please check out 'saveGame.php' -->
         <?php include('templates/levelUp.php');?>
         <?php include('templates/saveGame.php');?>
 
+<!-- Footer -->
 <?php include('templates/footer.php'); ?>
 
 </html>
