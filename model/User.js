@@ -107,6 +107,7 @@ class User {
     eatCookies(object, cookiesToEat) {
         if(object.getCookies() >= cookiesToEat) {
             object.setCookies(object.getCookies() - cookiesToEat);
+            object.showAmountAdded(cookiesToEat, `cookies eaten`);
             this.eatenCookies += cookiesToEat;
             this.updateCookiesEaten();
             this.checkIfLevelUp();

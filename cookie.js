@@ -18,7 +18,7 @@ clickOnCookie.src = 'assets/sound/cookieClicked.mp3';
 //functions for adding cookies
 document.getElementById("clickableCookie").addEventListener('click', function() {
     counter.addAmount(cookie.getClickPower());
-    counter.showAmountAdded(cookie.getClickPower());
+    counter.showAmountAdded(cookie.getClickPower(), "cookies");
     counter.updateCounter();
     counter.makeCurrencyAppear("cookie", counter.getCookies());
     cookie.cookieClickedAnimation();
@@ -68,6 +68,7 @@ Array.from(buttons).forEach(button => button.addEventListener('click', function(
         counter.setCookies(counter.getCookies() - costOfPurchase);
         counter.updateCounter();
         units[button.id].buyUnit(parseInt(button.innerHTML));
+        counter.showAmountAdded(button.innerHTML, `${units[button.id].getName()}s`);
         for(let i = 0; i < parseInt(button.innerHTML); i++) {
             units[button.id].setCost();
         } 
@@ -84,6 +85,7 @@ Array.from(landButtons).forEach(landButton => landButton.addEventListener('click
     let chosenUnit = parseInt(landButton.id.replace("landCost", ""));
     units[chosenUnit].homeland.buyLand(chosenUnit);
     counter.makeCurrencyAppear("land", user.getBoughtLand());
+    counter.showAmountAdded("+1", "Land");
 }))
 
 //Buying upgrades
@@ -116,11 +118,12 @@ let eatingButtons = document.getElementsByClassName("cookieEatingBtn");
 Array.from(eatingButtons).forEach(eatingButton =>eatingButton.addEventListener('click', function() {
     if(eatingButton.value == "allCookies") {
         if(user.getCookieLevelCap() >= parseInt(counter.getCookies())) {
-        user.eatCookies(counter, parseInt(counter.getCookies()));
+            counter.showAmountAdded(counter.getCookies(), `cookies eaten`);
+            user.eatCookies(counter, parseInt(counter.getCookies()));
         }
     } else {
         if(user.getCookieLevelCap() >= parseInt(eatingButton.value)) {
-        user.eatCookies(counter, parseInt(eatingButton.value));
+            user.eatCookies(counter, parseInt(eatingButton.value));
         }
     }
 }))
@@ -146,6 +149,7 @@ document.getElementById("sacrificeUnits").addEventListener('click', function() {
 
 function offerCookies(amountOfCookies) {
     if(counter.getCookies() >= amountOfCookies) {
+        counter.showAmountAdded(amountOfCookies, `cookies offered`);
         user.setOfferedCookies(user.getOfferedCookies() + amountOfCookies);
         counter.setCookies(counter.getCookies() - amountOfCookies);
         counter.updateCounter();
@@ -166,6 +170,7 @@ function sacrificeUnit(amountOfUnits) {
             }
 
             units[randomUnitChosen].killUnit(amountOfUnits);
+            counter.showAmountAdded(1, `unit sacrificed`);
             setHtmlelements(randomUnitChosen);
             user.setOfferedUnits(user.getOfferedUnits() + amountOfUnits);
             giveErrorMessage(`Sacrificed a ${units[randomUnitChosen].getName()}!`);
@@ -254,6 +259,7 @@ function giveErrorMessage(stringText) {
 //Random events
 document.getElementById("randomCookie").addEventListener('click', function() {
     counter.addAmount(randomCookie.rewardAmountClicked(cookie.getClickPower()));
+    counter.showAmountAdded((cookie.getClickPower() * 100), `cookies`);
     counter.updateCounter();
     randomCookie.disappearOnAllElements();
 })

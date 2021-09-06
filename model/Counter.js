@@ -31,13 +31,14 @@ class Counter {
         }
     }
 
-    showAmountAdded(amountAdded) {
+    showAmountAdded(amountAdded, currencyType) {
         let div = document.createElement("div");
         div.style.position = "absolute";
-        div.innerHTML = `+ ${amountAdded} cookies!`;
+        div.innerHTML = `+ ${amountAdded} ${currencyType}!`;
         div.style.zIndex = "10";
         div.style.top = `${event.clientY -30}px`;
         div.style.left = `${event.clientX - 30}px`;
+        div.style.color = "green";
         div.style.animation = "clickCursorAnimation1 1s 1";
         document.getElementById("mainContainer").append(div);
         div.addEventListener("animationend", function() {
